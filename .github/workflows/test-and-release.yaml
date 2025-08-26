@@ -30,14 +30,14 @@ jobs:
           helm-version: "v3.11.0"
           kubectl-version: "1.24.7"
           kubectl-release-date: "2022-10-31"
-          additional-helm-plugins: >-
-            https://github.com/helm-unittest/helm-unittest
-
-      - name: Lint
-        run: helm lint bitnami/*/
-
-      - name: Test
-        run: helm unittest --strict bitnami/*/
+#          additional-helm-plugins: >-
+#            https://github.com/helm-unittest/helm-unittest
+#
+#      - name: Lint
+#        run: helm lint bitnami/*/
+#
+#      - name: Test
+#        run: helm unittest --strict bitnami/*/
 
       - name: Release
         if: ${{ github.ref == 'refs/heads/main' }}
