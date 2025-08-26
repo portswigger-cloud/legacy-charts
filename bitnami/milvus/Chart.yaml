@@ -19,18 +19,18 @@ appVersion: 2.6.0
 dependencies:
 - condition: etcd.enabled
   name: etcd
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 12.x.x
 - condition: kafka.enabled
   name: kafka
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 32.x.x
 - condition: minio.enabled
   name: minio
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 17.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

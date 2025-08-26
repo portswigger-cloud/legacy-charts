@@ -16,10 +16,10 @@ apiVersion: v2
 appVersion: 8.2.3
 dependencies:
 - name: mongodb
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 16.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

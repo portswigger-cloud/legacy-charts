@@ -13,12 +13,12 @@ appVersion: 9.1.1
 dependencies:
 - condition: mariadb.enabled
   name: mariadb
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - ejbca-database
   version: 22.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

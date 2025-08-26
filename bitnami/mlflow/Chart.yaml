@@ -17,14 +17,14 @@ appVersion: 3.3.1
 dependencies:
 - condition: minio.enabled
   name: minio
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 17.x.x
 - condition: postgresql.enabled
   name: postgresql
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 16.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

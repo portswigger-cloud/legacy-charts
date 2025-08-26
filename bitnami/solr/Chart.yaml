@@ -15,10 +15,10 @@ appVersion: 9.9.0
 dependencies:
 - condition: zookeeper.enabled
   name: zookeeper
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 13.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x
