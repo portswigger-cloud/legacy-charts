@@ -21,14 +21,14 @@ appVersion: 0.85.0
 dependencies:
 - condition: exporters.enabled,exporters.node-exporter.enabled
   name: node-exporter
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 4.x.x
 - condition: exporters.enabled,exporters.kube-state-metrics.enabled
   name: kube-state-metrics
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 5.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

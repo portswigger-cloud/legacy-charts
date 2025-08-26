@@ -17,10 +17,10 @@ appVersion: 3.13.0
 dependencies:
 - condition: etcd.enabled
   name: etcd
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   version: 12.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

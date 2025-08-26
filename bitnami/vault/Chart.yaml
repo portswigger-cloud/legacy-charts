@@ -18,7 +18,7 @@ apiVersion: v2
 appVersion: 1.20.2
 dependencies:
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

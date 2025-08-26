@@ -15,12 +15,12 @@ appVersion: 5.2.2
 dependencies:
 - condition: db.bundleTestDB
   name: mariadb
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - phpmyadmin-database
   version: 22.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x

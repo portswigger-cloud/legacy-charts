@@ -15,12 +15,12 @@ appVersion: 6.0.5
 dependencies:
 - condition: mysql.enabled
   name: mysql
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - ghost-database
   version: 14.x.x
 - name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
+  repository: file://..
   tags:
   - bitnami-common
   version: 2.x.x
