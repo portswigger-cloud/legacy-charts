@@ -45,5 +45,5 @@ jobs:
         with:
           charts_dir: bitnami
         env:
-          CR_SKIP_EXISTING: "true"
+          CR_SKIP_EXISTING: "false"
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
