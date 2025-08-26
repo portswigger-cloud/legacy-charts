@@ -1,0 +1,8 @@
+owner: portswigger-cloud
+git-repo: legacy-charts
+charts-dir: bitnami
+skip-existing: true
+package-path: .cr-release-packages
+index-path: .cr-index
+pages-branch: gh-pages
+pages-index-path: index.yaml
