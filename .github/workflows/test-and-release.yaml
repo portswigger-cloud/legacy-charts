@@ -1,3 +1,5 @@
+name: Test and Release helm-charts
+
 on:
   push:
     branches:
@@ -42,4 +44,4 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         env:
           CR_SKIP_EXISTING: "true"
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}" This should give us a branch that we can then publish via pages
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
