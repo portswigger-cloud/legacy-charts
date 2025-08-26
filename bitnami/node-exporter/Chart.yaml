@@ -31,3 +31,4 @@ name: node-exporter
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/node-exporter
 version: 4.5.19
+# Updated for internal supply chain control

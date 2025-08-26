@@ -32,3 +32,4 @@ name: metrics-server
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/metrics-server
 version: 7.4.12
+# Updated for internal supply chain control
