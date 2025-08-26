@@ -34,3 +34,4 @@ sources:
 - https://github.com/bitnami-labs/sealed-secrets
 version: 2.5.19
 # Updated for internal supply chain control
+# Trigger release for chart repository publishing
