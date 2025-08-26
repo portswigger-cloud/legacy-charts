@@ -32,10 +32,10 @@ jobs:
             https://github.com/helm-unittest/helm-unittest
 
       - name: Lint
-        run: helm lint charts/*/
+        run: helm lint bitnami/*/
 
       - name: Test
-        run: helm unittest --strict charts/*/
+        run: helm unittest --strict bitnami/*/
 
       - name: Release
         if: ${{ github.ref == 'refs/heads/main' }}
