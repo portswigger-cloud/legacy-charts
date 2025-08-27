@@ -14,16 +14,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 5.3.2
-dependencies:
 - condition: mariadb.enabled
   name: mariadb
   repository: file://..
   version: 22.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Matomo, formerly known as Piwik, is a real time web analytics program.
   It provides detailed reports on website visitors.
 home: https://bitnami.com
@@ -36,8 +30,6 @@ keywords:
 - application
 - php
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: matomo
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/matomo

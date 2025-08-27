@@ -14,16 +14,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.13.0
-dependencies:
 - condition: etcd.enabled
   name: etcd
   repository: file://..
   version: 12.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Apache APISIX is high-performance, real-time API Gateway. Features load
   balancing, dynamic upstream, canary release, circuit breaking, authentication, observability,
   amongst others.
@@ -39,8 +33,6 @@ keywords:
 - www
 - reverse proxy
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: apisix
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/apisix

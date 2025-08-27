@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 9.1.2
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Logstash is an open source data processing engine. It ingests data from
   multiple sources, processes it, and sends the output to final destination in real-time.
   It is a core component of the ELK stack.
@@ -28,8 +22,6 @@ keywords:
 - logging
 - elk
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: logstash
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/logstash

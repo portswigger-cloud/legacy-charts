@@ -12,7 +12,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.5.0
-dependencies:
 - condition: redis.enabled
   name: redis
   repository: file://..
@@ -21,11 +20,6 @@ dependencies:
   name: postgresql
   repository: file://..
   version: 16.X.X
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Discourse is an open source discussion platform with built-in moderation
   and governance systems that let discussion communities protect themselves from bad
   actors even without official moderators.
@@ -35,12 +29,6 @@ keywords:
 - community
 - forum
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
-- email: username.taken@gmail.com
-  name: paulczar
-- email: preteluca@gmail.com
-  name: lucaprete
 name: discourse
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/discourse

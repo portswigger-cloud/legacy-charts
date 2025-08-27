@@ -10,7 +10,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 5.0.0
-dependencies:
 - condition: redis.enabled
   name: redis
   repository: file://..
@@ -19,11 +18,6 @@ dependencies:
   name: postgresql
   repository: file://..
   version: 16.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Superset is a modern data exploration and data visualization platform.
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/superset/img/superset-stack-220x234.png
@@ -31,8 +25,6 @@ keywords:
 - superset
 - analytics
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: superset
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/superset

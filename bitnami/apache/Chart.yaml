@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 2.4.65
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Apache HTTP Server is an open-source HTTP server. The goal of this project
   is to provide a secure, efficient and extensible server that provides HTTP services
   in sync with the current HTTP standards.
@@ -33,8 +27,6 @@ keywords:
 - web
 - reverse proxy
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: apache
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/apache

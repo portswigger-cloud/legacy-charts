@@ -16,12 +16,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.18.2
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: cert-manager is a Kubernetes add-on to automate the management and issuance
   of TLS certificates from various issuing sources.
 home: https://bitnami.com
@@ -32,8 +26,6 @@ keywords:
 - tls
 - certificate
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: cert-manager
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/cert-manager

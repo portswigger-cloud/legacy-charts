@@ -12,16 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 7.13.2
-dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: file://..
   version: 16.X.X
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Concourse is an automation system written in Go. It is most commonly
   used for CI/CD, and is built to scale to any kind of automation pipeline, from simple
   to complex.
@@ -35,8 +29,6 @@ keywords:
 - web
 - application
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: concourse
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/concourse

@@ -14,16 +14,10 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 9.1.2
-dependencies:
 - condition: global.kibanaEnabled
   name: kibana
   repository: file://..
   version: 12.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Elasticsearch is a distributed search and analytics engine. It is used
   for web search, log monitoring, and real-time analytics. Ideal for Big Data applications.
 home: https://bitnami.com
@@ -31,8 +25,6 @@ icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/elasticsearch/img/elast
 keywords:
 - elasticsearch
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: elasticsearch
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch

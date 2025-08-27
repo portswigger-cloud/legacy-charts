@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 9.1.2
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Kibana is an open source, browser based analytics and search dashboard
   for Elasticsearch. Kibana strives to be easy to get started with, while also being
   flexible and powerful.
@@ -30,8 +24,6 @@ keywords:
 - metrics
 - logs
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: kibana
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kibana

@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.21.4
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: HashiCorp Consul is a tool for discovering and configuring services in
   your infrastructure.
 home: https://bitnami.com
@@ -29,8 +23,6 @@ keywords:
 - configuring
 - services
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: consul
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/consul

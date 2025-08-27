@@ -15,12 +15,6 @@ annotations:
   licenses: Apache-2.0
 apiVersion: v2
 appVersion: 0.25.3
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: ClickHouse Operator is a production-ready operator that manages ClickHouse
   databases delivering robust features required for cost-efficient, real-time analytic
   applications.
@@ -32,8 +26,6 @@ keywords:
 - clickhouse
 - operator
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: clickhouse-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse-operator

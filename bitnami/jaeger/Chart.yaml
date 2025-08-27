@@ -12,16 +12,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 2.9.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
-- condition: cassandra.enabled
-  name: cassandra
-  repository: file://..
-  version: 12.x.x
 description: Jaeger is a distributed tracing system. It is used for monitoring and
   troubleshooting microservices-based distributed systems.
 home: https://bitnami.com
@@ -31,8 +21,6 @@ keywords:
 - tracing
 - monitoring
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: jaeger
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/jaeger

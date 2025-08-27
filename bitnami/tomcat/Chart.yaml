@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 11.0.10
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Apache Tomcat is an open-source web server designed to host and run Java-based
   web applications. It is a lightweight server with a good performance for applications
   running in production environments.
@@ -33,8 +27,6 @@ keywords:
 - application server
 - jsp
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: tomcat
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/tomcat

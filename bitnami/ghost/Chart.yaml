@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 6.0.5
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Ghost is an open source publishing platform designed to create blogs,
   magazines, and news sites. It includes a simple markdown editor with preview, theming,
   and SEO built-in to simplify editing.
@@ -32,8 +26,6 @@ keywords:
 - nodejs
 - javascript
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: ghost
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/ghost

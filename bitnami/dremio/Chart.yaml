@@ -14,7 +14,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 26.0.0
-dependencies:
 - condition: minio.enabled
   name: minio
   repository: file://..
@@ -23,11 +22,6 @@ dependencies:
   name: zookeeper
   repository: file://..
   version: 13.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Dremio is an open-source self-service data access tool that provides
   high-performance queries for interactive analytics on data lakes.
 home: https://bitnami.com
@@ -36,8 +30,6 @@ keywords:
 - dremio
 - data-lake
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: dremio
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/dremio

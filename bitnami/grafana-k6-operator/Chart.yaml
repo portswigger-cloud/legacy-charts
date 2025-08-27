@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 0.0.23
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Grafana k6 Operator is a Kubernetes operator that enables running distributed
   k6 load tests in a cluster, automating test execution and scaling for performance
   validation.
@@ -30,8 +24,6 @@ keywords:
 - operator
 - tests
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: grafana-k6-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-k6-operator

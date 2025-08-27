@@ -10,12 +10,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.7.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Kubernetes Event Exporter makes it easy to export Kubernetes events to
   other tools, thereby enabling better event observability, custom alerts and aggregation.
 home: https://bitnami.com
@@ -28,8 +22,6 @@ keywords:
 - monitoring
 - observability
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: kubernetes-event-exporter
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kubernetes-event-exporter

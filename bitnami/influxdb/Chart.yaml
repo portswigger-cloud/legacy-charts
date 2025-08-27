@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 3.3.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: InfluxDB(TM) Core is an open source time-series database. It is a core
   component of the FDAP (Apache Flight, DataFusion, Arrow, and Parquet) stack.
 home: https://bitnami.com
@@ -30,8 +24,6 @@ keywords:
 - database
 - timeseries
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: influxdb
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/influxdb

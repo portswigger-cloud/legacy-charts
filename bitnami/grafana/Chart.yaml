@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 12.1.1
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Grafana is an open source metric analytics and visualization suite for
   visualizing time series data that supports various types of data sources.
 home: https://bitnami.com
@@ -28,8 +22,6 @@ keywords:
 - metrics
 - logs
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: grafana
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana

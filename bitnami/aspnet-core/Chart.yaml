@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 9.0.8
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: ASP.NET Core is an open-source framework for web application development
   created by Microsoft. It runs on both the full .NET Framework, on Windows, and the
   cross-platform .NET Core.
@@ -29,8 +23,6 @@ keywords:
 - asp.net
 - dotnet
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: aspnet-core
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/aspnet-core

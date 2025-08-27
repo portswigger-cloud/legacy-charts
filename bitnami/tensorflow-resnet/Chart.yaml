@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.19.1
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
   and ResNet models.
 home: https://bitnami.com
@@ -30,8 +24,6 @@ keywords:
 - learning
 - library
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: tensorflow-resnet
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet

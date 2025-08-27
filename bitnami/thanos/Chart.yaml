@@ -12,16 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 0.39.2
-dependencies:
 - condition: minio.enabled
   name: minio
   repository: file://..
   version: 17.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Thanos is a highly available metrics system that can be added on top
   of existing Prometheus deployments, providing a global query view across all Prometheus
   installations.
@@ -33,8 +27,6 @@ keywords:
 - prometheus
 - thanos
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: thanos
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/thanos

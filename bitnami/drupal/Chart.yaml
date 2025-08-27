@@ -14,16 +14,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 11.2.3
-dependencies:
 - condition: mariadb.enabled
   name: mariadb
   repository: file://..
   version: 22.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Drupal is one of the most versatile open source content management systems
   in the world. It is pre-configured with the Ctools and Views modules, Drush and
   Let's Encrypt auto-configuration support.
@@ -38,8 +32,6 @@ keywords:
 - application
 - php
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: drupal
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/drupal

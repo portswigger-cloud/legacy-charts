@@ -16,7 +16,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.17.0
-dependencies:
 - condition: minio.enabled
   name: minio
   repository: file://..
@@ -41,11 +40,6 @@ dependencies:
   name: memcached
   repository: file://..
   version: 7.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Grafana Mimir is an open source, horizontally scalable, highly available,
   multi-tenant, long-term storage for Prometheus.
 home: https://bitnami.com
@@ -56,8 +50,6 @@ keywords:
 - metrics
 - infrastructure
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: grafana-mimir
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-mimir
