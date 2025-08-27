@@ -15,11 +15,11 @@ dependencies:
 - condition: redis.enabled
   name: redis
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 8.x.x
+  version: 22.0.6-legacy
 - condition: mongodb.enabled
   name: mongodb
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 8.x.x
+  version: 16.5.45-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -38,4 +38,4 @@ maintainers:
 name: appsmith
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/appsmith
-version: 7.0.3-legacy
+version: 7.0.4-legacy

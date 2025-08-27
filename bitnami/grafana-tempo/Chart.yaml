@@ -16,7 +16,7 @@ dependencies:
 - condition: memcached.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -38,4 +38,4 @@ maintainers:
 name: grafana-tempo
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-tempo
-version: 4.0.17-legacy
+version: 4.0.18-legacy

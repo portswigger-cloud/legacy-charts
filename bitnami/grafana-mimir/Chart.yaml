@@ -16,27 +16,27 @@ dependencies:
 - condition: minio.enabled
   name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 2025.x.x
+  version: 17.0.21-legacy
 - alias: memcachedmetadata
   condition: memcachedmetadata.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedindex
   condition: memcachedindex.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedfrontend
   condition: memcachedfrontend.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedchunks
   condition: memcachedchunks.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -57,4 +57,4 @@ maintainers:
 name: grafana-mimir
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-mimir
-version: 3.0.18-legacy
+version: 3.0.19-legacy

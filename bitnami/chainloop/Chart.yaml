@@ -21,7 +21,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.x.x
+  version: 16.7.27-legacy
 - condition: development
   name: vault
   repository: https://portswigger-cloud.github.io/legacy-charts/
@@ -57,4 +57,4 @@ maintainers:
 name: chainloop
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/chainloop
-version: 4.0.74-legacy
+version: 4.0.75-legacy
