@@ -30,4 +30,4 @@ maintainers:
 name: gitlab-runner
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/gitlab-runner
-version: 18.3.1
+version: 1.1.8-legacy

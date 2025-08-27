@@ -30,4 +30,4 @@ maintainers:
 name: whereabouts
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/whereabouts
-version: 0.9.3
+version: 1.2.19-legacy

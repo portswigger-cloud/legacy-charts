@@ -42,4 +42,4 @@ maintainers:
 name: mlflow
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mlflow
-version: 3.3.2
+version: 5.1.16-legacy

@@ -32,4 +32,4 @@ maintainers:
 name: cassandra
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/cassandra
-version: 5.0.6
+version: 12.3.11-legacy

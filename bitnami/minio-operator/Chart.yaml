@@ -31,4 +31,4 @@ maintainers:
 name: minio-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/minio-operator
-version: 7.1.2
+version: 0.2.9-legacy

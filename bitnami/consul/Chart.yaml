@@ -31,4 +31,4 @@ maintainers:
 name: consul
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/consul
-version: 1.21.5
+version: 11.4.32-legacy
