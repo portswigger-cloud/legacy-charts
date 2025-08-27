@@ -14,11 +14,11 @@ dependencies:
 - condition: redis.enabled
   name: redis
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 22.x.x
+  version: 8.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.x.x
+  version: 17.x.x
 - condition: elasticsearch.enabled
   name: elasticsearch
   repository: https://portswigger-cloud.github.io/legacy-charts/
