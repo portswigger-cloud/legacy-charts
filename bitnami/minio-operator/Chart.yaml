@@ -25,4 +25,4 @@ maintainers:
 name: minio-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/minio-operator
-version: 1.0.0
+version: 7.1.1

@@ -29,5 +29,5 @@ maintainers:
 name: kube-prometheus
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
-version: 1.0.0# Updated for internal supply chain control
+version: 0.85.0
 # Trigger release for chart repository publishing

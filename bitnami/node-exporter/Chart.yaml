@@ -23,5 +23,5 @@ maintainers:
 name: node-exporter
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/node-exporter
-version: 1.0.0# Updated for internal supply chain control
+version: 1.9.1
 # Trigger release for chart repository publishing

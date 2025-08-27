@@ -25,4 +25,4 @@ maintainers:
 name: contour
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/contour
-version: 1.0.0
+version: 1.32.1

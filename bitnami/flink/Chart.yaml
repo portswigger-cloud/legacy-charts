@@ -23,4 +23,4 @@ maintainers:
 name: flink
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/flink
-version: 1.0.0
+version: 2.1.0

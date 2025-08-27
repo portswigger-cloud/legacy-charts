@@ -27,4 +27,4 @@ maintainers:
 name: clickhouse-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse-operator
-version: 1.0.0
+version: 0.25.3

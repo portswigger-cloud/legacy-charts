@@ -25,4 +25,4 @@ maintainers:
 name: clickhouse
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
-version: 1.0.0
+version: 25.7.4

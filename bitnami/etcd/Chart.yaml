@@ -27,4 +27,4 @@ maintainers:
 name: etcd
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/etcd
-version: 1.0.0
+version: 3.6.4

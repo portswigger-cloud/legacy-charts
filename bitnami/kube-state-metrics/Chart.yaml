@@ -23,5 +23,5 @@ maintainers:
 name: kube-state-metrics
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kube-state-metrics
-version: 1.0.0# Updated for internal supply chain control
+version: 2.16.0
 # Trigger release for chart repository publishing
