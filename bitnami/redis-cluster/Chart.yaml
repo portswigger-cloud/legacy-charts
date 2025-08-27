@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 8.2.1
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Redis(R) is an open source, scalable, distributed in-memory cache for
   applications. It can be used to store and serve data in the form of strings, hashes,
   lists, sets and sorted sets.
@@ -30,8 +24,6 @@ keywords:
 - keyvalue
 - database
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: redis-cluster
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/redis-cluster

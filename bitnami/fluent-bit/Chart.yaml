@@ -10,12 +10,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 4.0.8
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Fluent Bit is a Fast and Lightweight Log Processor and Forwarder. It
   has been made with a strong focus on performance to allow the collection of events
   from different sources without complexity.
@@ -26,8 +20,6 @@ keywords:
 - logging
 - monitoring
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: fluent-bit
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/fluent-bit

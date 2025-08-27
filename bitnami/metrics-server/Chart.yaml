@@ -10,12 +10,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.8.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Metrics Server aggregates resource usage data, such as container CPU
   and memory usage, in a Kubernetes cluster and makes it available via the Metrics
   API.
@@ -26,8 +20,6 @@ keywords:
 - cluster
 - metrics
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: metrics-server
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/metrics-server

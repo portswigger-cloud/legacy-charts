@@ -12,16 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.24.5
-dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: file://..
   version: 16.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Gitea is a lightweight code hosting solution. Written in Go, features
   low resource consumption, easy upgrades and multiple databases.
 home: https://bitnami.com
@@ -34,8 +28,6 @@ keywords:
 - application
 - php
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: gitea
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/gitea

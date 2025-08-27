@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 7.1.1
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: MinIO(R) Operator is a Kubernetes-native tool for deploying and managing
   high-performance, S3-compatible MinIO(R) object storage across hybrid cloud infrastructures.
 home: https://bitnami.com
@@ -29,8 +23,6 @@ keywords:
 - operator
 - postgresql
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: minio-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/minio-operator

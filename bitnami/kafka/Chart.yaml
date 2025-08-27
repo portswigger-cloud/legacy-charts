@@ -16,12 +16,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 4.0.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Apache Kafka is a distributed streaming platform designed to build real-time
   pipelines and can be used as a message broker or as a replacement for a log aggregation
   solution for big data applications.
@@ -33,8 +27,6 @@ keywords:
 - producer
 - consumer
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: kafka
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kafka

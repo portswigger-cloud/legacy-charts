@@ -14,16 +14,10 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 1.1.0
-dependencies:
 - condition: storageBackend.cassandra.enabled
   name: cassandra
   repository: file://..
   version: 12.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: JanusGraph is a scalable graph database optimized for storing and querying
   graphs containing hundreds of billions of vertices and edges distributed across
   a multi-machine cluster.
@@ -34,8 +28,6 @@ keywords:
 - graph
 - database
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: janusgraph
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/janusgraph

@@ -12,12 +12,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 3.9.3
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Apache ZooKeeper provides a reliable, centralized register of configuration
   data and services for distributed applications.
 home: https://bitnami.com
@@ -25,8 +19,6 @@ icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zookeeper/img/zookeeper
 keywords:
 - zookeeper
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: zookeeper
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/zookeeper

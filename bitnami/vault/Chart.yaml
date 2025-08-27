@@ -16,12 +16,6 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.20.2
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Vault is a tool for securely managing and accessing secrets using a unified
   interface. Features secure storage, dynamic secrets, data encryption and revocation.
 home: https://bitnami.com
@@ -32,8 +26,6 @@ keywords:
 - injection
 - vault
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: vault
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/vault

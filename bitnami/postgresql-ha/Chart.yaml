@@ -16,12 +16,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 17.6.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: This PostgreSQL cluster solution includes the PostgreSQL replication
   manager, an open-source tool for managing replication and failover on PostgreSQL
   clusters.
@@ -38,8 +32,6 @@ keywords:
 - cluster
 - high availability
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: postgresql-ha
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha

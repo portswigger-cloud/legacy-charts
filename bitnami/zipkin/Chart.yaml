@@ -12,16 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.5.1
-dependencies:
 - condition: cassandra.enabled
   name: cassandra
   repository: file://..
   version: 12.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Zipkin is a distributed tracing system that helps collect and analyze
   timing data to troubleshoot latency issues in service architectures, providing visibility
   into service call performance.
@@ -31,8 +25,6 @@ keywords:
 - zipkin
 - tracing
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: zipkin
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/zipkin

@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 1.5.0
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Envoy Gateway simplifies traffic management by extending Envoy Proxy's
   features, offering Kubernetes Gateway API integration for secure, scalable, and
   observable application routing
@@ -31,8 +25,6 @@ keywords:
 - gateway
 - ingress
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: envoy-gateway
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/envoy-gateway

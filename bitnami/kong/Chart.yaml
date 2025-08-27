@@ -12,20 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.9.1
-dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: file://..
   version: 16.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
-- condition: cassandra.enabled
-  name: cassandra
-  repository: file://..
-  version: 12.x.x
 description: Kong is an open source Microservice API gateway and platform designed
   for managing microservices requests of high-availability, fault-tolerance, and distributed
   systems.
@@ -41,8 +31,6 @@ keywords:
 - www
 - reverse proxy
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: kong
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kong

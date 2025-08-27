@@ -14,12 +14,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.516.2
-dependencies:
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Jenkins is an open source Continuous Integration and Continuous Delivery
   (CI/CD) server designed to automate the building, testing, and deploying of any
   software project.
@@ -33,8 +27,6 @@ keywords:
 - web
 - application
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: jenkins
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/jenkins

@@ -12,7 +12,6 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 4.4.3
-dependencies:
 - condition: redis.enabled
   name: redis
   repository: file://..
@@ -33,11 +32,6 @@ dependencies:
   name: apache
   repository: file://..
   version: 11.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Mastodon is self-hosted social network server based on ActivityPub. Written
   in Ruby, features real-time updates, multimedia attachments and no vendor lock-in.
 home: https://bitnami.com
@@ -46,8 +40,6 @@ keywords:
 - development
 - dashboards
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: mastodon
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mastodon

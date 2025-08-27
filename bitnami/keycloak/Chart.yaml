@@ -12,16 +12,10 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 26.3.3
-dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: file://..
   version: 16.x.x
-- name: common
-  repository: file://..
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Keycloak is a high performance Java-based identity and access management
   solution. It lets developers add an authentication layer to their applications with
   minimum effort.
@@ -31,8 +25,6 @@ keywords:
 - keycloak
 - access-management
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
 name: keycloak
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
