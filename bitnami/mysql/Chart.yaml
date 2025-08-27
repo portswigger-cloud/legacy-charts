@@ -33,4 +33,4 @@ maintainers:
 name: mysql
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mysql
-version: 14.0.3-legacy
+version: 14.0.4

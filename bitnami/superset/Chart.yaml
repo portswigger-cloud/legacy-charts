@@ -13,11 +13,11 @@ dependencies:
 - condition: redis.enabled
   name: redis
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 22.0.6-legacy
+  version: 22.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -35,4 +35,4 @@ maintainers:
 name: superset
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/superset
-version: 5.0.1-legacy
+version: 5.0.2

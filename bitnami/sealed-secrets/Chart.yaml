@@ -30,5 +30,5 @@ maintainers:
 name: sealed-secrets
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/sealed-secrets
-version: 2.5.19-legacy
+version: 2.5.20
 # Trigger release for chart repository publishing

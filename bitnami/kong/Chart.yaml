@@ -14,7 +14,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -23,7 +23,7 @@ dependencies:
 - condition: cassandra.enabled
   name: cassandra
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.3.11-legacy
+  version: 12.x.x
 description: Kong is an open source Microservice API gateway and platform designed
   for managing microservices requests of high-availability, fault-tolerance, and distributed
   systems.
@@ -44,4 +44,4 @@ maintainers:
 name: kong
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kong
-version: 15.4.22-legacy
+version: 15.4.23

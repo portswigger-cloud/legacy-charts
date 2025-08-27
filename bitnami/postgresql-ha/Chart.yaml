@@ -39,4 +39,4 @@ maintainers:
 name: postgresql-ha
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
-version: 16.3.2-legacy
+version: 16.3.3

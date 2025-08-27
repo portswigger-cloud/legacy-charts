@@ -18,13 +18,13 @@ dependencies:
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - seaweedfs-database
-  version: 22.0.0-legacy
+  version: 22.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - seaweedfs-database
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -46,4 +46,4 @@ maintainers:
 name: seaweedfs
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/seaweedfs
-version: 6.0.2-legacy
+version: 6.0.3

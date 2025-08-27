@@ -30,5 +30,5 @@ maintainers:
 name: metrics-server
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/metrics-server
-version: 7.4.12-legacy
+version: 7.4.13
 # Trigger release for chart repository publishing

@@ -14,7 +14,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -37,4 +37,4 @@ maintainers:
 name: gitea
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/gitea
-version: 3.2.23-legacy
+version: 3.2.24

@@ -37,4 +37,4 @@ maintainers:
 name: mongodb
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
-version: 16.5.45-legacy
+version: 16.5.46

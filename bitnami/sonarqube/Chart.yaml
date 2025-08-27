@@ -15,7 +15,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -37,5 +37,5 @@ maintainers:
 name: sonarqube
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/sonarqube
-version: 8.1.18-legacy
+version: 8.1.19
 # Trigger release for chart repository publishing
