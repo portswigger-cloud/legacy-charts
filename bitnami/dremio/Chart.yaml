@@ -38,4 +38,4 @@ maintainers:
 name: dremio
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/dremio
-version: 26.0.0
+version: 26.0.1

@@ -35,4 +35,4 @@ maintainers:
 name: superset
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/superset
-version: 5.0.0
+version: 5.0.1

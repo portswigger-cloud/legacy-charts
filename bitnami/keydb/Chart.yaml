@@ -32,4 +32,4 @@ maintainers:
 name: keydb
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/keydb
-version: 6.3.4
+version: 6.3.5

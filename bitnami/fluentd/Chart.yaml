@@ -31,4 +31,4 @@ maintainers:
 name: fluentd
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/fluentd
-version: 1.19.0
+version: 1.19.1

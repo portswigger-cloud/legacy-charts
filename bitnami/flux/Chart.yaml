@@ -38,4 +38,4 @@ maintainers:
 name: flux
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/flux
-version: 1.6.2
+version: 1.6.3

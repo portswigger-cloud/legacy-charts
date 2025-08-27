@@ -34,4 +34,4 @@ maintainers:
 name: zipkin
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/zipkin
-version: 3.5.1
+version: 3.5.2

@@ -33,4 +33,4 @@ maintainers:
 name: clickhouse-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse-operator
-version: 0.25.3
+version: 0.25.4

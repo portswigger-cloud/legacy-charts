@@ -35,4 +35,4 @@ maintainers:
 name: nessie
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/nessie
-version: 0.104.9
+version: 0.104.10
