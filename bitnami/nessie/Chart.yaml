@@ -15,7 +15,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.x.x
+  version: 16.7.27-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -35,4 +35,4 @@ maintainers:
 name: nessie
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/nessie
-version: 2.0.33-legacy
+version: 2.0.34-legacy

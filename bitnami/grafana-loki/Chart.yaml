@@ -21,22 +21,22 @@ dependencies:
   condition: memcachedchunks.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedfrontend
   condition: memcachedfrontend.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedindexqueries
   condition: memcachedindexqueries.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - alias: memcachedindexwrites
   condition: memcachedindexwrites.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 7.9.7-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -58,4 +58,4 @@ maintainers:
 name: grafana-loki
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-loki
-version: 6.0.6-legacy
+version: 6.0.7-legacy

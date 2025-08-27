@@ -16,15 +16,15 @@ dependencies:
 - condition: etcd.enabled
   name: etcd
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 3.x.x
+  version: 12.0.18-legacy
 - condition: kafka.enabled
   name: kafka
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 4.x.x
+  version: 32.4.3-legacy
 - condition: minio.enabled
   name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 2025.x.x
+  version: 17.0.21-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -47,4 +47,4 @@ maintainers:
 name: milvus
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/milvus
-version: 16.0.1-legacy
+version: 16.0.2-legacy

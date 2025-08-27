@@ -15,7 +15,7 @@ dependencies:
 - condition: mariadb.enabled
   name: mariadb
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.x.x
+  version: 22.0.0-legacy
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -38,4 +38,4 @@ maintainers:
 name: matomo
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/matomo
-version: 11.0.0-legacy
+version: 11.0.1-legacy
