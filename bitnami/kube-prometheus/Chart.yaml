@@ -28,8 +28,8 @@ dependencies:
   - bitnami-common
   version: 2.x.x
 - name: kube-prometheus-crds
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 0.x.x
+  repository: file://../kube-prometheus-crds
+  version: "*"
 description: Prometheus Operator provides easy monitoring definitions for Kubernetes
   services and deployment and management of Prometheus instances.
 home: https://bitnami.com
