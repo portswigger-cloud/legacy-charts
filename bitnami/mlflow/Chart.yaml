@@ -15,11 +15,11 @@ dependencies:
 - condition: minio.enabled
   name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.x.x
+  version: 2025.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.x.x
+  version: 17.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:

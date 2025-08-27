@@ -18,13 +18,13 @@ dependencies:
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - seaweedfs-database
-  version: 22.x.x
+  version: 8.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - seaweedfs-database
-  version: 16.x.x
+  version: 17.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:

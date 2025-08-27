@@ -15,11 +15,11 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.x.x
+  version: 17.x.x
 - condition: mysql.enabled
   name: mysql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 14.x.x
+  version: 9.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:

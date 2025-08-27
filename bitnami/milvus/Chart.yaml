@@ -16,15 +16,15 @@ dependencies:
 - condition: etcd.enabled
   name: etcd
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.x.x
+  version: 3.x.x
 - condition: kafka.enabled
   name: kafka
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 32.x.x
+  version: 4.x.x
 - condition: minio.enabled
   name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.x.x
+  version: 2025.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:

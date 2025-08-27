@@ -21,7 +21,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.x.x
+  version: 17.x.x
 - condition: development
   name: vault
   repository: https://portswigger-cloud.github.io/legacy-charts/

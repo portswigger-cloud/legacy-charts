@@ -13,7 +13,7 @@ dependencies:
 - condition: redis.enabled
   name: redis
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 22.x.x
+  version: 8.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
