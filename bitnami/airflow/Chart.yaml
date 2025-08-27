@@ -13,14 +13,6 @@ annotations:
 apiVersion: v2
 appVersion: 3.0.5
 dependencies:
-- condition: redis.enabled
-  name: redis
-  repository: file://..
-  version: 22.x.x
-- condition: postgresql.enabled
-  name: postgresql
-  repository: file://..
-  version: 16.x.x
 - name: common
   repository: file://..
   tags:
