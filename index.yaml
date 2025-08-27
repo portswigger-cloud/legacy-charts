@@ -1893,6 +1893,33 @@ entries:
     urls:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/kube-prometheus-0.85.0/kube-prometheus-0.85.0.tgz
     version: 0.85.0
+  kube-prometheus-crds:
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-08-27T08:59:55.36207857Z"
+    description: Prometheus Operator provides easy monitoring definitions for Kubernetes
+      services and deployment and management of Prometheus instances.
+    digest: 0f336fe2507f35f8aaf98d6bb37b2c748f12032338ceb842d29f71e87fda2526
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: kube-prometheus-crds
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus-crds
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/kube-prometheus-crds-0.1.0/kube-prometheus-crds-0.1.0.tgz
+    version: 0.1.0
   kube-state-metrics:
   - annotations:
       category: Analytics
@@ -3997,4 +4024,4 @@ entries:
     urls:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/zookeeper-3.9.3/zookeeper-3.9.3.tgz
     version: 3.9.3
-generated: "2025-08-27T07:59:13.477519677Z"
+generated: "2025-08-27T09:00:05.155327704Z"
