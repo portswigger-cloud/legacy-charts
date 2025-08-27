@@ -21,4 +21,4 @@ maintainers:
 name: kube-prometheus-crds
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus-crds
-version: 0.1.0-legacy
+version: 0.1.0
