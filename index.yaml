@@ -10,6 +10,50 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.0.5
+    created: "2025-08-27T12:28:42.395487722Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Airflow is a tool to express and execute workflows as directed
+      acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
+      progress and handle task dependencies.
+    digest: e2723ec4ff8096812008d1ec1ac654252442270edccf877915f10f0ef7c61a2a
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/airflow/img/airflow-stack-220x234.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: airflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/airflow
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/airflow-25.0.3-legacy/airflow-25.0.3-legacy.tgz
+    version: 25.0.3-legacy
+  - annotations:
+      category: WorkFlow
+      images: |
+        image: docker.io/bitnami/airflow:3.0.5-debian-12-r0
+        image: docker.io/bitnami/statsd-exporter:0.28.0-debian-12-r24
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.0.5
     created: "2025-08-27T11:14:05.13382148Z"
     dependencies:
     - condition: redis.enabled
@@ -242,6 +286,51 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.13.0
+    created: "2025-08-27T12:28:42.557826876Z"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.0.18-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache APISIX is high-performance, real-time API Gateway. Features
+      load balancing, dynamic upstream, canary release, circuit breaking, authentication,
+      observability, amongst others.
+    digest: d00414648b4b57dc69fe0995218728f4618d06f154708f80c2dae7ecffb457a2
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apisix/img/apisix-stack-220x234.png
+    keywords:
+    - apisix
+    - ingress
+    - openresty
+    - controller
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: apisix
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/apisix
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/apisix-6.0.1-legacy/apisix-6.0.1-legacy.tgz
+    version: 6.0.1-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/apisix:3.13.0-debian-12-r4
+        image: docker.io/bitnami/apisix-ingress-controller:1.8.4-debian-12-r14
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.13.0
     created: "2025-08-27T11:14:05.516269807Z"
     dependencies:
     - condition: etcd.enabled
@@ -368,6 +457,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.85.0
+    created: "2025-08-27T12:28:42.764308214Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.5.45-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Appsmith is an open source platform for building and maintaining
+      internal tools, such as custom dashboards, admin panels or CRUD apps.
+    digest: ce255f98dfd288bca42a32643763ce978df98fb7493234fecf4ac18a0b96affb
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/appsmith/img/appsmith-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: appsmith
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/appsmith
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/appsmith-7.0.4-legacy/appsmith-7.0.4-legacy.tgz
+    version: 7.0.4-legacy
+  - annotations:
+      category: CMS
+      images: |
+        image: docker.io/bitnami/appsmith:1.85.0-debian-12-r0
+        image: docker.io/bitnami/haproxy:3.2.4-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.85.0
     created: "2025-08-27T11:14:05.682606728Z"
     dependencies:
     - condition: redis.enabled
@@ -482,6 +613,46 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.1.1
+    created: "2025-08-27T12:28:42.94100702Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
+    digest: f7d024ee533ccbb4f22c45933cdc2be79b55facec3c2d6bfc5d1751141d4a548
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
+    keywords:
+    - Continuous delivery
+    - Continuous deployment
+    - Devops
+    - Kubernetes
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: argo-cd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/argo-cd
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/argo-cd-11.0.1-legacy/argo-cd-11.0.1-legacy.tgz
+    version: 11.0.1-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/argo-cd:3.1.1-debian-12-r0
+        image: docker.io/bitnami/dex:2.43.1-debian-12-r8
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+        image: docker.io/bitnami/redis:8.2.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.1.1
     created: "2025-08-27T11:14:05.891416301Z"
     dependencies:
     - condition: redis.enabled
@@ -582,6 +753,51 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/argo-cd-3.1.1/argo-cd-3.1.1.tgz
     version: 3.1.1
   argo-workflows:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/argo-workflow-cli:3.7.1-debian-12-r1
+        image: docker.io/bitnami/argo-workflow-controller:3.7.1-debian-12-r1
+        image: docker.io/bitnami/argo-workflow-exec:3.7.1-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.7.1
+    created: "2025-08-27T12:28:43.142121372Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 14.0.3-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo Workflows is meant to orchestrate Kubernetes jobs in parallel.
+      It uses DAG and step-based workflows
+    digest: 664c49c224c8cdee67ff311f3b7527c8234b4fb70173a52b6d9ebf84e1e6431f
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-workflows/img/argo-workflows-stack-220x234.png
+    keywords:
+    - Devops
+    - Kubernetes
+    - Jobs
+    - Continuous delivery
+    - Continous deployment
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: argo-workflows
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/argo-workflows
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/argo-workflows-13.0.7-legacy/argo-workflows-13.0.7-legacy.tgz
+    version: 13.0.7-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -1118,6 +1334,68 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.43.0
+    created: "2025-08-27T12:28:43.398793843Z"
+    dependencies:
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - condition: development
+      name: vault
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 1.x.x
+    description: Chainloop is an open-source Software Supply Chain control plane,
+      a single source of truth for metadata and artifacts, plus a declarative attestation
+      process.
+    digest: ff69958a971eec058efc9711cc9a953589297852249d1a8430d1ea363ff493a7
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/chainloop/img/chainloop-stack-220x234.png
+    keywords:
+    - chainloop
+    - evidence-store
+    - supply-chain-security
+    - devops
+    - devsecops
+    - security
+    - compliance
+    - cyclonedx
+    - spdx
+    - sbom
+    - attestation
+    - oss-compliance
+    - in-toto
+    - slsa
+    - sbom-distribution
+    - open-source-licensing
+    - slsa-provenance
+    - metadata-platform
+    - sbom-discovery
+    - regulated-industry
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: chainloop
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/chainloop
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/chainloop-4.0.75-legacy/chainloop-4.0.75-legacy.tgz
+    version: 4.0.75-legacy
+  - annotations:
+      category: DeveloperTools
+      images: |
+        image: docker.io/bitnami/chainloop-artifact-cas:1.43.0-debian-12-r0
+        image: docker.io/bitnami/chainloop-control-plane:1.43.0-debian-12-r0
+        image: docker.io/bitnami/chainloop-control-plane-migrations:1.43.0-debian-12-r0
+        image: docker.io/bitnami/dex:2.43.1-debian-12-r8
+      license: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.43.0
     created: "2025-08-27T11:14:06.945994376Z"
     dependencies:
     - name: common
@@ -1280,6 +1558,52 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/chainloop-1.43.0/chainloop-1.43.0.tgz
     version: 1.43.0
   cilium:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/cilium:1.18.1-debian-12-r0
+        image: docker.io/bitnami/cilium-operator:1.18.1-debian-12-r0
+        image: docker.io/bitnami/cilium-proxy:1.34.5-debian-12-r0
+        image: docker.io/bitnami/hubble-relay:1.18.1-debian-12-r0
+        image: docker.io/bitnami/hubble-ui:0.13.3-debian-12-r0
+        image: docker.io/bitnami/hubble-ui-backend:0.13.3-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.18.1
+    created: "2025-08-27T12:28:43.590459372Z"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - cilium-database
+      version: 12.0.18-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Cilium is an eBPF-based networking, observability, and security for
+      Linux container management platforms like Docker and Kubernetes.
+    digest: bcd2ad443bcdb214f9fb40fed7bc7febf65dd16a7a0ae8e150e0d01cda953957
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cilium/img/cilium-stack-220x234.png
+    keywords:
+    - cilium
+    - cni
+    - networking
+    - observability
+    - security
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: cilium
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/cilium
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/cilium-3.1.10-legacy/cilium-3.1.10-legacy.tgz
+    version: 3.1.10-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -1852,6 +2176,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 7.13.2
+    created: "2025-08-27T12:28:43.786257814Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Concourse is an automation system written in Go. It is most commonly
+      used for CI/CD, and is built to scale to any kind of automation pipeline, from
+      simple to complex.
+    digest: 678a152f3d3396860b82c05670c92ff137f43ec0a6c76c8da62ab3442fa6d9ec
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/concourse/img/concourse-stack-220x234.png
+    keywords:
+    - concourse
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: concourse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/concourse
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/concourse-5.1.46-legacy/concourse-5.1.46-legacy.tgz
+    version: 5.1.46-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/concourse:7.13.2-debian-12-r12
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 7.13.2
     created: "2025-08-27T11:14:07.662323137Z"
     dependencies:
     - condition: postgresql.enabled
@@ -2204,6 +2570,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.5.0
+    created: "2025-08-27T12:28:43.942215875Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Discourse is an open source discussion platform with built-in moderation
+      and governance systems that let discussion communities protect themselves from
+      bad actors even without official moderators.
+    digest: 099e3b754f3ce2b8db91114ac5ddc49fb256e69d971ab7ae26c3fa3531bf9bce
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/discourse/img/discourse-stack-220x234.png
+    keywords:
+    - community
+    - forum
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: discourse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/discourse
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/discourse-17.0.2-legacy/discourse-17.0.2-legacy.tgz
+    version: 17.0.2-legacy
+  - annotations:
+      category: Forum
+      images: |
+        image: docker.io/bitnami/discourse:3.5.0-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.5.0
     created: "2025-08-27T11:14:08.337298277Z"
     dependencies:
     - condition: redis.enabled
@@ -2388,6 +2796,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 26.0.0
+    created: "2025-08-27T12:28:44.114684646Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 3.x.x
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Dremio is an open-source self-service data access tool that provides
+      high-performance queries for interactive analytics on data lakes.
+    digest: fa7940ca885d1e5b4e325279a3fd395f07610eb403d3471f471987e8918018e0
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/dremio/img/dremio-stack-220x234.png
+    keywords:
+    - dremio
+    - data-lake
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: dremio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/dremio
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/dremio-3.0.14-legacy/dremio-3.0.14-legacy.tgz
+    version: 3.0.14-legacy
+  - annotations:
+      category: Analytics
+      images: |
+        image: docker.io/bitnami/dremio:26.0.0-debian-12-r5
+        image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 26.0.0
     created: "2025-08-27T11:14:08.535186256Z"
     dependencies:
     - condition: minio.enabled
@@ -2421,6 +2871,50 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/dremio-3.0.13-legacy/dremio-3.0.13-legacy.tgz
     version: 3.0.13-legacy
   drupal:
+  - annotations:
+      category: CMS
+      images: |
+        image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        image: docker.io/bitnami/drupal:11.2.3-debian-12-r1
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 11.2.3
+    created: "2025-08-27T12:28:44.375961625Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Drupal is one of the most versatile open source content management
+      systems in the world. It is pre-configured with the Ctools and Views modules,
+      Drush and Let's Encrypt auto-configuration support.
+    digest: 6fbb68677476cd1c40e7c0fd1f348b9379760688b4280f05618bee09947904ee
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: drupal
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/drupal
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/drupal-23.0.1-legacy/drupal-23.0.1-legacy.tgz
+    version: 23.0.1-legacy
   - annotations:
       category: CMS
       images: |
@@ -2544,6 +3038,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/drupal-11.2.3/drupal-11.2.3.tgz
     version: 11.2.3
   ejbca:
+  - annotations:
+      category: CertificateAuthority
+      images: |
+        image: docker.io/bitnami/ejbca:9.1.1-debian-12-r12
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 9.1.1
+    created: "2025-08-27T12:28:44.55174872Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - ejbca-database
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: EJBCA is an enterprise class PKI Certificate Authority software,
+      built using Java (JEE) technology.
+    digest: 515d4e953da7283c61fa4cfb1de01ccc11cfb40da07ed2ade59025164ff154eb
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ejbca/img/ejbca-stack-220x234.png
+    keywords:
+    - ejbca
+    - ca
+    - pki
+    - certificate
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: ejbca
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ejbca
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/ejbca-19.0.1-legacy/ejbca-19.0.1-legacy.tgz
+    version: 19.0.1-legacy
   - annotations:
       category: CertificateAuthority
       images: |
@@ -3485,6 +4019,51 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.0.5
+    created: "2025-08-27T12:28:44.744355997Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - ghost-database
+      version: 14.0.3-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: 7c26a2499fff26c4ea9950d76a92d86f58e5dc88fe711ead3c6d09f7df59fc69
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: ghost
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ghost
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/ghost-25.0.5-legacy/ghost-25.0.5-legacy.tgz
+    version: 25.0.5-legacy
+  - annotations:
+      category: CMS
+      images: |
+        image: docker.io/bitnami/ghost:6.0.5-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.0.5
     created: "2025-08-27T11:14:10.396274128Z"
     dependencies:
     - condition: mysql.enabled
@@ -3600,6 +4179,47 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/ghost-6.0.5/ghost-6.0.5.tgz
     version: 6.0.5
   gitea:
+  - annotations:
+      category: Analytics
+      images: |
+        image: docker.io/bitnami/gitea:1.24.5-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.24.5
+    created: "2025-08-27T12:28:44.90374515Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Gitea is a lightweight code hosting solution. Written in Go, features
+      low resource consumption, easy upgrades and multiple databases.
+    digest: dfe6d8c96f2caa0017540fae17f843d33ba65f03783cefed9e45b546580411d4
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitea/img/gitea-stack-220x234.png
+    keywords:
+    - gitea
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: gitea
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/gitea
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/gitea-3.2.23-legacy/gitea-3.2.23-legacy.tgz
+    version: 3.2.23-legacy
   - annotations:
       category: Analytics
       images: |
@@ -4136,6 +4756,68 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.5.3
+    created: "2025-08-27T12:28:45.234856715Z"
+    dependencies:
+    - alias: grafanaalloy
+      condition: grafanaalloy.enabled
+      name: grafana-alloy
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 1.x.x
+    - alias: memcachedchunks
+      condition: memcachedchunks.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedfrontend
+      condition: memcachedfrontend.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedindexqueries
+      condition: memcachedindexqueries.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedindexwrites
+      condition: memcachedindexwrites.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Loki is a horizontally scalable, highly available, and multi-tenant
+      log aggregation system. It provides real-time long tailing and full persistence
+      to object storage.
+    digest: 58c033598c112623a315b1f46f7175c1a2f3cda6a31b01e0007602f0c61792b0
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-loki/img/grafana-loki-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: grafana-loki
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-loki
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/grafana-loki-6.0.7-legacy/grafana-loki-6.0.7-legacy.tgz
+    version: 6.0.7-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/grafana-loki:3.5.3-debian-12-r2
+        image: docker.io/bitnami/nginx:1.29.1-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.5.3
     created: "2025-08-27T11:14:11.420208619Z"
     dependencies:
     - alias: grafanaalloy
@@ -4282,6 +4964,67 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/grafana-loki-3.5.3/grafana-loki-3.5.3.tgz
     version: 3.5.3
   grafana-mimir:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/grafana-mimir:2.17.0-debian-12-r0
+        image: docker.io/bitnami/memcached:1.6.39-debian-12-r0
+        image: docker.io/bitnami/nginx:1.29.1-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.17.0
+    created: "2025-08-27T12:28:45.415087469Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - alias: memcachedmetadata
+      condition: memcachedmetadata.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedindex
+      condition: memcachedindex.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedfrontend
+      condition: memcachedfrontend.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - alias: memcachedchunks
+      condition: memcachedchunks.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Mimir is an open source, horizontally scalable, highly available,
+      multi-tenant, long-term storage for Prometheus.
+    digest: 5f141a8aace29cff539ce8fe3860c145cb8e8fe61a2bd64cc8e314de2573a4ff
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-mimir/img/grafana-mimir-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: grafana-mimir
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-mimir
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/grafana-mimir-3.0.19-legacy/grafana-mimir-3.0.19-legacy.tgz
+    version: 3.0.19-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -4580,6 +5323,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.8.2
+    created: "2025-08-27T12:28:45.603118799Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Tempo is a distributed tracing system that has out-of-the-box
+      integration with Grafana. It is highly scalable and works with many popular
+      tracing protocols.
+    digest: 8289a071507f773868e9df0e264147fa05b5fc2b83506b76ad02b1713632c999
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-tempo/img/grafana-tempo-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: grafana-tempo
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-tempo
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/grafana-tempo-4.0.18-legacy/grafana-tempo-4.0.18-legacy.tgz
+    version: 4.0.18-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/grafana-tempo:2.8.2-debian-12-r1
+        image: docker.io/bitnami/grafana-tempo-query:2.8.2-debian-12-r1
+        image: docker.io/bitnami/grafana-tempo-vulture:2.8.2-debian-12-r1
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.8.2
     created: "2025-08-27T11:14:11.912932042Z"
     dependencies:
     - condition: memcached.enabled
@@ -4783,6 +5568,57 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/haproxy-2.2.34-legacy/haproxy-2.2.34-legacy.tgz
     version: 2.2.34-legacy
   harbor:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/harbor-adapter-trivy:2.13.2-debian-12-r2
+        image: docker.io/bitnami/harbor-core:2.13.2-debian-12-r3
+        image: docker.io/bitnami/harbor-exporter:2.13.2-debian-12-r2
+        image: docker.io/bitnami/harbor-jobservice:2.13.2-debian-12-r3
+        image: docker.io/bitnami/harbor-portal:2.13.2-debian-12-r1
+        image: docker.io/bitnami/harbor-registry:2.13.2-debian-12-r2
+        image: docker.io/bitnami/harbor-registryctl:2.13.2-debian-12-r3
+        image: docker.io/bitnami/nginx:1.29.1-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.13.2
+    created: "2025-08-27T12:28:45.771389856Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Harbor is an open source trusted cloud-native registry to store,
+      sign, and scan content. It adds functionalities like security, identity, and
+      management to the open source Docker distribution.
+    digest: 3761c5c21d6f52fa105241264cf003b564c3c294c8d364bc0db14beccd71d88f
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
+    keywords:
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: harbor
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/harbor
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/harbor-27.0.4-legacy/harbor-27.0.4-legacy.tgz
+    version: 27.0.4-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -5035,6 +5871,44 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 2.9.0
+    created: "2025-08-27T12:28:45.977606209Z"
+    dependencies:
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.3.11-legacy
+    description: Jaeger is a distributed tracing system. It is used for monitoring
+      and troubleshooting microservices-based distributed systems.
+    digest: 0379263dd2a066e9242d89ddbc3a2729643514cebd2ea8a32a62051d04f3acba
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jaeger/img/jaeger-stack-220x234.png
+    keywords:
+    - jaeger
+    - tracing
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: jaeger
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/jaeger
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/jaeger-6.0.6-legacy/jaeger-6.0.6-legacy.tgz
+    version: 6.0.6-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/cassandra:5.0.5-debian-12-r7
+        image: docker.io/bitnami/jaeger:2.9.0-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 2.9.0
     created: "2025-08-27T11:14:12.540825944Z"
     dependencies:
     - name: common
@@ -5131,6 +6005,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/jaeger-2.9.0/jaeger-2.9.0.tgz
     version: 2.9.0
   janusgraph:
+  - annotations:
+      category: Database
+      images: |
+        image: docker.io/bitnami/janusgraph:1.1.0-debian-12-r21
+        image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2025-08-27T12:28:46.176800148Z"
+    dependencies:
+    - condition: storageBackend.cassandra.enabled
+      name: cassandra
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.3.11-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: JanusGraph is a scalable graph database optimized for storing and
+      querying graphs containing hundreds of billions of vertices and edges distributed
+      across a multi-machine cluster.
+    digest: 15de70971478c9a98027830e0657d00def80b39fa5f089c6a983e6fa188dec81
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/janusgraph/img/janusgraph-stack-220x234.png
+    keywords:
+    - janusgraph
+    - graph
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: janusgraph
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/janusgraph
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/janusgraph-1.4.11-legacy/janusgraph-1.4.11-legacy.tgz
+    version: 1.4.11-legacy
   - annotations:
       category: Database
       images: |
@@ -5354,6 +6268,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/jenkins-2.516.2/jenkins-2.516.2.tgz
     version: 2.516.2
   jupyterhub:
+  - annotations:
+      category: MachineLearning
+      images: |
+        image: docker.io/bitnami/configurable-http-proxy:5.0.1-debian-12-r21
+        image: docker.io/bitnami/jupyter-base-notebook:5.3.0-debian-12-r10
+        image: docker.io/bitnami/jupyterhub:5.3.0-debian-12-r15
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.3.0
+    created: "2025-08-27T12:28:46.33911761Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: JupyterHub brings the power of notebooks to groups of users. It gives
+      users access to computational environments and resources without burdening the
+      users with installation and maintenance tasks.
+    digest: 74c342b64cbcd9c2c30e5b25b07642cbceda2e7276180652bee25f39a2bd59be
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jupyterhub/img/jupyterhub-stack-220x234.png
+    keywords:
+    - python
+    - scientific
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: jupyterhub
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/jupyterhub
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/jupyterhub-10.0.6-legacy/jupyterhub-10.0.6-legacy.tgz
+    version: 10.0.6-legacy
   - annotations:
       category: MachineLearning
       images: |
@@ -5640,6 +6594,44 @@ entries:
     urls:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/keycloak-26.3.3/keycloak-26.3.3.tgz
     version: 26.3.3
+  - annotations:
+      category: DeveloperTools
+      images: |
+        image: docker.io/bitnami/keycloak:26.3.3-debian-12-r0
+        image: docker.io/bitnami/keycloak-config-cli:6.4.0-debian-12-r11
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 26.3.3
+    created: "2025-08-27T12:28:46.595384626Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 645ccb66fa96ab2e2c4f015a1900f09098127cd47e13e72a4159f0418fac4f5a
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/keycloak-25.2.1-legacy/keycloak-25.2.1-legacy.tgz
+    version: 25.2.1-legacy
   - annotations:
       category: DeveloperTools
       images: |
@@ -5982,6 +6974,54 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/kibana-9.1.2/kibana-9.1.2.tgz
     version: 9.1.2
   kong:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/kong:3.9.1-debian-12-r7
+        image: docker.io/bitnami/kong-ingress-controller:3.5.1-debian-12-r3
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.9.1
+    created: "2025-08-27T12:28:46.841582684Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.3.11-legacy
+    description: Kong is an open source Microservice API gateway and platform designed
+      for managing microservices requests of high-availability, fault-tolerance, and
+      distributed systems.
+    digest: 5460772d7e916e8ff7b69162db81e4c65802e721ad47832268216e896b9fd46b
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kong/img/kong-stack-220x234.png
+    keywords:
+    - kong
+    - ingress
+    - openresty
+    - controller
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: kong
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kong
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/kong-15.4.22-legacy/kong-15.4.22-legacy.tgz
+    version: 15.4.22-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -7113,6 +8153,60 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 4.4.3
+    created: "2025-08-27T12:28:47.100721426Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.1.6-legacy
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - condition: apache.enabled
+      name: apache
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 11.4.29-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: 3b98cb8862eadcd732ad0f483c1a24634c8a8d76898ad426154f49ac39ed273a
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/mastodon-14.0.1-legacy/mastodon-14.0.1-legacy.tgz
+    version: 14.0.1-legacy
+  - annotations:
+      category: CMS
+      images: |
+        image: docker.io/bitnami/mastodon:4.4.3-debian-12-r8
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 4.4.3
     created: "2025-08-27T11:14:15.722004984Z"
     dependencies:
     - condition: redis.enabled
@@ -7241,6 +8335,48 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/mastodon-4.4.3/mastodon-4.4.3.tgz
     version: 4.4.3
   matomo:
+  - annotations:
+      category: Analytics
+      images: |
+        image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        image: docker.io/bitnami/matomo:5.3.2-debian-12-r12
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.3.2
+    created: "2025-08-27T12:28:49.25586573Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Matomo, formerly known as Piwik, is a real time web analytics program.
+      It provides detailed reports on website visitors.
+    digest: 50b91d8e9fa713a5dc9de83fb1c3d5070e3a847c481807158a8242042e936ae2
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/matomo/img/matomo-stack-220x234.png
+    keywords:
+    - matomo
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: matomo
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/matomo
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/matomo-11.0.1-legacy/matomo-11.0.1-legacy.tgz
+    version: 11.0.1-legacy
   - annotations:
       category: Analytics
       images: |
@@ -7713,6 +8849,57 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.6.0
+    created: "2025-08-27T12:28:49.474950287Z"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.0.18-legacy
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 32.4.3-legacy
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Milvus is a cloud-native, open-source vector database solution for
+      AI applications and similarity search. Features high scalability, hibrid search
+      and unified lambda structure.
+    digest: 2895e7f6ba39371d5195a8e7f6acb6cc037f2c7bb1311fe5d28b77e045e31411
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/milvus/img/milvus-stack-220x234.png
+    keywords:
+    - milvus
+    - ai
+    - database
+    - infrastructure
+    - attu
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: milvus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/milvus
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/milvus-16.0.2-legacy/milvus-16.0.2-legacy.tgz
+    version: 16.0.2-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/attu:2.5.12-debian-12-r0
+        image: docker.io/bitnami/milvus:2.6.0-debian-12-r1
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/pymilvus:2.6.0-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.6.0
     created: "2025-08-27T11:14:16.68227469Z"
     dependencies:
     - condition: etcd.enabled
@@ -8053,6 +9240,52 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/minio-operator-0.2.9-legacy/minio-operator-0.2.9-legacy.tgz
     version: 0.2.9-legacy
   mlflow:
+  - annotations:
+      category: MachineLearning
+      images: |
+        image: docker.io/bitnami/git:2.51.0-debian-12-r0
+        image: docker.io/bitnami/mlflow:3.3.1-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.3.1
+    created: "2025-08-27T12:28:49.660205547Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MLflow is an open-source platform designed to manage the end-to-end
+      machine learning lifecycle. It allows you to track experiments, package code
+      into reproducible runs, and share and deploy models.
+    digest: c8e600c073d0d7aace7cf8c36405a9a58541c5d882df08e530a07f32f847d0db
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mlflow/img/mlflow-stack-220x234.png
+    keywords:
+    - mlflow
+    - models
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mlflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mlflow
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/mlflow-5.1.17-legacy/mlflow-5.1.17-legacy.tgz
+    version: 5.1.17-legacy
   - annotations:
       category: MachineLearning
       images: |
@@ -8408,6 +9641,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/mongodb-sharded-8.0.13/mongodb-sharded-8.0.13.tgz
     version: 8.0.13
   moodle:
+  - annotations:
+      category: E-Learning
+      images: |
+        image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        image: docker.io/bitnami/moodle:5.0.2-debian-12-r1
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.0.2
+    created: "2025-08-27T12:28:49.899270849Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Moodle(TM) LMS is an open source online Learning Management System
+      widely used at universities, schools, and corporations. It is modular and highly
+      adaptable to any type of online learning.
+    digest: e7275a8f04e812ebae8091ffa28185e55e03af906b3e9ff01aabe66c344a9327
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/moodle/img/moodle-stack-220x234.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: moodle
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/moodle
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/moodle-28.0.1-legacy/moodle-28.0.1-legacy.tgz
+    version: 28.0.1-legacy
   - annotations:
       category: E-Learning
       images: |
@@ -8944,6 +10217,45 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.104.9
+    created: "2025-08-27T12:28:50.109821701Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Nessie is an open-source version control system for data lakes, enabling
+      isolated data experimentation before committing changes.
+    digest: 5db25e53992ea1fcd35e7d73c53f8f96a8cec441e7b4a00fa1787eb0597584d5
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nessie/img/nessie-stack-220x234.png
+    keywords:
+    - nessie
+    - graph
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: nessie
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nessie
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/nessie-2.0.34-legacy/nessie-2.0.34-legacy.tgz
+    version: 2.0.34-legacy
+  - annotations:
+      category: Database
+      images: |
+        image: docker.io/bitnami/nessie:0.104.9-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+        image: docker.io/bitnami/postgresql:17.6.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 0.104.9
     created: "2025-08-27T11:14:18.398775989Z"
     dependencies:
     - condition: postgresql.enabled
@@ -9396,6 +10708,47 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 7.12.0
+    created: "2025-08-27T12:28:50.302861906Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A reverse proxy and static file server that provides authentication
+      using Providers (Google, GitHub, and others) to validate accounts by email,
+      domain or group.
+    digest: e253525ef997f6023cdc739f6c3967f23a2fab2ac6a6ea69a5a116098be793c1
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/oauth2-proxy/img/oauth2-proxy-stack-220x234.png
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: oauth2-proxy
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/oauth2-proxy
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/oauth2-proxy-8.0.3-legacy/oauth2-proxy-8.0.3-legacy.tgz
+    version: 8.0.3-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/oauth2-proxy:7.12.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 7.12.0
     created: "2025-08-27T11:14:19.001899754Z"
     dependencies:
     - condition: redis.enabled
@@ -9502,6 +10855,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/oauth2-proxy-7.12.0/oauth2-proxy-7.12.0.tgz
     version: 7.12.0
   odoo:
+  - annotations:
+      category: CRM
+      images: |
+        image: docker.io/bitnami/odoo:18.0.20250805-debian-12-r8
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 18.0.20250805
+    created: "2025-08-27T12:28:50.510398392Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
+      that can connect a wide variety of business operations such as sales, supply
+      chain, finance, and project management.
+    digest: c4463c2107b61f754a8d7048d2373cec800cf7f3f1363a56941b996651eb03ff
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/odoo/img/odoo-stack-220x234.png
+    keywords:
+    - odoo
+    - crm
+    - www
+    - http
+    - web
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: odoo
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/odoo
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/odoo-28.2.11-legacy/odoo-28.2.11-legacy.tgz
+    version: 28.2.11-legacy
   - annotations:
       category: CRM
       images: |
@@ -9720,6 +11113,48 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 8.2.3
+    created: "2025-08-27T12:28:50.670218676Z"
+    dependencies:
+    - name: mongodb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.5.45-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Parse is a platform that enables users to add a scalable and powerful
+      backend to launch a full-featured app for iOS, Android, JavaScript, Windows,
+      Unity, and more.
+    digest: 446e6cc16b2ccca7c170411bfdf09f8892b607d51680844c2805aaccef6fb917
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/parse/img/parse-stack-220x234.png
+    keywords:
+    - parse
+    - backend
+    - serverless
+    - platform
+    - mbaas
+    - mobile
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: parse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/parse
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/parse-25.1.16-legacy/parse-25.1.16-legacy.tgz
+    version: 25.1.16-legacy
+  - annotations:
+      category: DeveloperTools
+      images: |
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/parse:8.2.3-debian-12-r13
+        image: docker.io/bitnami/parse-dashboard:7.3.0-debian-12-r15
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 8.2.3
     created: "2025-08-27T11:14:19.53341633Z"
     dependencies:
     - name: mongodb
@@ -9828,6 +11263,47 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/parse-8.2.3/parse-8.2.3.tgz
     version: 8.2.3
   phpmyadmin:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        image: docker.io/bitnami/phpmyadmin:5.2.2-debian-12-r22
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.2.2
+    created: "2025-08-27T12:28:50.89030017Z"
+    dependencies:
+    - condition: db.bundleTestDB
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - phpmyadmin-database
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: phpMyAdmin is a free software tool written in PHP, intended to handle
+      the administration of MySQL over the Web. phpMyAdmin supports a wide range of
+      operations on MySQL and MariaDB.
+    digest: 36b95ebe1df73474db913b1022ba5046a7bd741d99f58a9b087b60acada1410c
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/phpmyadmin/img/phpmyadmin-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - phpmyadmin
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: phpmyadmin
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/phpmyadmin
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/phpmyadmin-20.0.1-legacy/phpmyadmin-20.0.1-legacy.tgz
+    version: 20.0.1-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -10912,6 +12388,54 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.0.6
+    created: "2025-08-27T12:28:51.056746198Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redmine is an open source management application. It includes a tracking
+      issue system, Gantt charts for a visual view of projects and deadlines, and
+      supports SCM integration for version control.
+    digest: 59963cc5811c09a2dd951dfc3304c36fe87284ca0d97364a8e31f1ea17d85129
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redmine/img/redmine-stack-220x234.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: redmine
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redmine
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/redmine-34.0.1-legacy/redmine-34.0.1-legacy.tgz
+    version: 34.0.1-legacy
+  - annotations:
+      category: ProjectManagement
+      images: |
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/redmine:6.0.6-debian-12-r6
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.0.6
     created: "2025-08-27T11:14:21.440199251Z"
     dependencies:
     - condition: postgresql.enabled
@@ -11034,6 +12558,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/redmine-6.0.6/redmine-6.0.6.tgz
     version: 6.0.6
   schema-registry:
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/schema-registry:8.0.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 8.0.0
+    created: "2025-08-27T12:28:51.246289701Z"
+    dependencies:
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 32.4.3-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Confluent Schema Registry provides a RESTful interface by adding
+      a serving layer for your metadata on top of Kafka. It expands Kafka enabling
+      support for Apache Avro, JSON, and Protobuf schemas.
+    digest: 8814a930e70b8e49155d60107abc674a463d2d6a8b5594a9e2f8ab5ba0e0b643
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/schema-registry/img/schema-registry-stack-220x234.png
+    keywords:
+    - schema-registry
+    - confluent
+    - kafka
+    - zookeeper
+    - streaming
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: schema-registry
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/schema-registry
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/schema-registry-26.0.6-legacy/schema-registry-26.0.6-legacy.tgz
+    version: 26.0.6-legacy
   - annotations:
       category: Infrastructure
       images: |
@@ -11389,6 +12953,56 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.96.0
+    created: "2025-08-27T12:28:51.441008451Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - seaweedfs-database
+      version: 22.0.0-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - seaweedfs-database
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SeaweedFS is a simple and highly scalable distributed file system.
+    digest: 2dca7caade32dbeb463c228f0b37e4f01f50ebc7c2a539528a0121d8d41f0389
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/seaweedfs/img/seaweedfs-stack-220x234.png
+    keywords:
+    - seaweedfs
+    - storage
+    - blob-storage
+    - file-storage
+    - object-storage
+    - s3
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: seaweedfs
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/seaweedfs
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/seaweedfs-6.0.2-legacy/seaweedfs-6.0.2-legacy.tgz
+    version: 6.0.2-legacy
+  - annotations:
+      category: Infrastructure
+      images: |
+        image: docker.io/bitnami/mariadb:12.0.2-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/postgresql:17.6.0-debian-12-r0
+        image: docker.io/bitnami/seaweedfs:3.96.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.96.0
     created: "2025-08-27T11:14:22.124427864Z"
     dependencies:
     - condition: mariadb.enabled
@@ -11694,6 +13308,47 @@ entries:
   - annotations:
       category: DeveloperTools
       images: |
+        image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+        image: docker.io/bitnami/sonarqube:25.8.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 25.8.0
+    created: "2025-08-27T12:28:51.671614366Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SonarQube(TM) is an open source quality management platform that
+      analyzes and measures code's technical quality. It enables developers to detect
+      code issues, vulnerabilities, and bugs in early stages.
+    digest: 7309b838e028974a8c4127d763bab59a8158d627b0775f7fc062f955e04bfca6
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sonarqube/img/sonarqube-stack-220x234.png
+    keywords:
+    - sonarqube
+    - code-quality
+    - code-review
+    - static-analysis
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: sonarqube
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/sonarqube
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/sonarqube-8.1.18-legacy/sonarqube-8.1.18-legacy.tgz
+    version: 8.1.18-legacy
+  - annotations:
+      category: DeveloperTools
+      images: |
         - name: jmx-exporter
           image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
         - name: os-shell
@@ -11918,6 +13573,45 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.0.0
+    created: "2025-08-27T12:28:51.946400517Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.6-legacy
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 16.7.27-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Superset is a modern data exploration and data visualization platform.
+    digest: 2067392c2975b6d72a436a802eaa6229ffb939f3b62ddd35e1031eabcc88bfd5
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/superset/img/superset-stack-220x234.png
+    keywords:
+    - superset
+    - analytics
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: superset
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/superset
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/superset-5.0.1-legacy/superset-5.0.1-legacy.tgz
+    version: 5.0.1-legacy
+  - annotations:
+      category: Analytics
+      images: |
+        image: docker.io/bitnami/superset:5.0.0-debian-12-r71
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.0.0
     created: "2025-08-27T07:59:11.544222884Z"
     description: Superset is a modern data exploration and data visualization platform.
     digest: 43422af6e77c8b9c5d77e94551212bd6e652a972877697f710a03f60999182f7
@@ -12081,6 +13775,46 @@ entries:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/tensorflow-resnet-2.19.1/tensorflow-resnet-2.19.1.tgz
     version: 2.19.1
   thanos:
+  - annotations:
+      category: Analytics
+      images: |
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 0.39.2
+    created: "2025-08-27T12:28:52.182096374Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.0.21-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: 7c879227bcdff75c9eac52265b7b9a3f2755f24abb043394f985c44626435e1a
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/thanos/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: thanos
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/thanos
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/thanos-17.3.2-legacy/thanos-17.3.2-legacy.tgz
+    version: 17.3.2-legacy
   - annotations:
       category: Analytics
       images: |
@@ -12944,6 +14678,54 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.8.2
+    created: "2025-08-27T12:28:52.339114915Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 7.9.7-legacy
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 22.0.0-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: 402180694659759a37e4f0d392d46080ef1acf6d43a221d3767cc2c9d86b40b9
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/wordpress-26.0.1-legacy/wordpress-26.0.1-legacy.tgz
+    version: 26.0.1-legacy
+  - annotations:
+      category: CMS
+      images: |
+        image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        image: docker.io/bitnami/os-shell:12-debian-12-r50
+        image: docker.io/bitnami/wordpress:6.8.2-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.8.2
     created: "2025-08-27T11:14:24.419262112Z"
     dependencies:
     - condition: memcached.enabled
@@ -13140,6 +14922,44 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.5.1
+    created: "2025-08-27T12:28:52.554764766Z"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 12.3.11-legacy
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Zipkin is a distributed tracing system that helps collect and analyze
+      timing data to troubleshoot latency issues in service architectures, providing
+      visibility into service call performance.
+    digest: 12b3226fbdddfad17b90c53e3debd1067522070eb0f390e15023f2360a7caee8
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zipkin/img/zipkin-stack-220x234.png
+    keywords:
+    - zipkin
+    - tracing
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: zipkin
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/zipkin
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/zipkin-1.3.12-legacy/zipkin-1.3.12-legacy.tgz
+    version: 1.3.12-legacy
+  - annotations:
+      category: Database
+      images: |
+        image: docker.io/bitnami/cassandra:5.0.5-debian-12-r7
+        image: docker.io/bitnami/zipkin:3.5.1-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.5.1
     created: "2025-08-27T11:14:24.638311829Z"
     dependencies:
     - condition: cassandra.enabled
@@ -13260,4 +15080,4 @@ entries:
     urls:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/zookeeper-3.9.3/zookeeper-3.9.3.tgz
     version: 3.9.3
-generated: "2025-08-27T11:21:18.216997368Z"
+generated: "2025-08-27T12:28:52.555424221Z"
