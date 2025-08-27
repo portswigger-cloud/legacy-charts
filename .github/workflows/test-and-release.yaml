@@ -23,6 +23,17 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
+      - name: Debug - List chart directories
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Contents of bitnami directory:"
+          ls -la bitnami/
+          echo "Sample chart directory (airflow):"
+          ls -la bitnami/airflow/
+          echo "Chart.yaml exists?"
+          test -f bitnami/airflow/Chart.yaml && echo "Yes" || echo "No"
+
       - name: Setup Helmfile
         uses: mamezou-tech/setup-helmfile@v1.2.0
         with:
@@ -39,11 +50,11 @@ jobs:
 #      - name: Test
 #        run: helm unittest --strict bitnami/*/
 
-      - name: Release
+      - name: Run chart-releaser
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: helm/chart-releaser-action@v1.5.0
         with:
           charts_dir: bitnami
+          config: cr.yaml
         env:
-          CR_SKIP_EXISTING: "true"
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

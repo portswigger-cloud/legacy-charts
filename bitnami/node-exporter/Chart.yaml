@@ -4,18 +4,11 @@
 annotations:
   category: Analytics
   images: |
-    - name: node-exporter
       image: docker.io/bitnami/node-exporter:1.9.1-debian-12-r14
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.9.1
-dependencies:
-- name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
   with pluggable metric collectors.
 home: https://bitnami.com
@@ -30,6 +23,5 @@ maintainers:
 name: node-exporter
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/node-exporter
-version: 4.5.19
-# Updated for internal supply chain control
+version: 1.0.0# Updated for internal supply chain control
 # Trigger release for chart repository publishing
