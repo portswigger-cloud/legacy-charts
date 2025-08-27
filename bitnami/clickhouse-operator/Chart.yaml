@@ -4,13 +4,9 @@
 annotations:
   category: Database
   images: |
-    - name: clickhouse
       image: docker.io/bitnami/clickhouse:25.7.4-debian-12-r0
-    - name: clickhouse-keeper
       image: docker.io/bitnami/clickhouse-keeper:25.7.4-debian-12-r0
-    - name: clickhouse-operator
       image: docker.io/bitnami/clickhouse-operator:0.25.3-debian-12-r1
-    - name: clickhouse-operator-metrics-exporter
       image: docker.io/bitnami/clickhouse-operator-metrics-exporter:0.25.3-debian-12-r1
   licenses: Apache-2.0
 apiVersion: v2
@@ -26,8 +22,9 @@ keywords:
 - clickhouse
 - operator
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: clickhouse-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse-operator
-- https://github.com/bitnami/containers/tree/main/bitnami/clickhouse-operator
-version: 0.2.31
+version: 1.0.0

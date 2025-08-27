@@ -17,7 +17,11 @@ keywords:
 - monitoring
 kubeVersion: '>= 1.16.0-0'
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: kube-prometheus-crds
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus/charts/kube-prometheus-crds
+- https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus-crds
+version: 0.1.0name: kube-prometheus-crds
+sources:
 version: 0.1.0

@@ -4,7 +4,6 @@
 annotations:
   category: Analytics
   images: |
-    - name: kube-state-metrics
       image: docker.io/bitnami/kube-state-metrics:2.16.0-debian-12-r5
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
@@ -19,9 +18,10 @@ keywords:
 - kube-state-metrics
 - monitoring
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: kube-state-metrics
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kube-state-metrics
-version: 5.1.0
-# Updated for internal supply chain control
+version: 1.0.0# Updated for internal supply chain control
 # Trigger release for chart repository publishing

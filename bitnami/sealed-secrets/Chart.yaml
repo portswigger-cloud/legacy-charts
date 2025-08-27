@@ -4,7 +4,6 @@
 annotations:
   category: DeveloperTools
   images: |
-    - name: sealed-secrets-controller
       image: docker.io/bitnami/sealed-secrets-controller:0.31.0-debian-12-r0
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
@@ -20,10 +19,10 @@ keywords:
 - sealed-secrets
 kubeVersion: '>=1.16.0-0'
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: sealed-secrets
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/sealed-secrets
-- https://github.com/bitnami-labs/sealed-secrets
-version: 2.5.19
-# Updated for internal supply chain control
+version: 1.0.0# Updated for internal supply chain control
 # Trigger release for chart repository publishing

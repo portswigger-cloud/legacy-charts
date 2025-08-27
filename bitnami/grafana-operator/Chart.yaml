@@ -4,9 +4,7 @@
 annotations:
   category: Analytics
   images: |
-    - name: grafana
       image: docker.io/bitnami/grafana:12.1.1-debian-12-r1
-    - name: grafana-operator
       image: docker.io/bitnami/grafana-operator:5.19.4-debian-12-r2
   licenses: Apache-2.0
   tanzuCategory: application
@@ -21,9 +19,10 @@ keywords:
 - operator
 - monitoring
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: grafana-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-operator
-version: 4.9.37
-# Updated for internal supply chain control
+version: 1.0.0# Updated for internal supply chain control
 # Trigger release for chart repository publishing

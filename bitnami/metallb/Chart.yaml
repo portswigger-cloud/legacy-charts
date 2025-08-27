@@ -4,9 +4,7 @@
 annotations:
   category: Infrastructure
   images: |
-    - name: metallb-controller
       image: docker.io/bitnami/metallb-controller:0.15.2-debian-12-r7
-    - name: metallb-speaker
       image: docker.io/bitnami/metallb-speaker:0.15.2-debian-12-r6
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
@@ -26,7 +24,9 @@ keywords:
 - vip
 kubeVersion: '>= 1.19.0-0'
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: metallb
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/metallb
-version: 6.4.22
+version: 1.0.0

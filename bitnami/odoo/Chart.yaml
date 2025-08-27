@@ -4,16 +4,11 @@
 annotations:
   category: CRM
   images: |
-    - name: odoo
       image: docker.io/bitnami/odoo:18.0.20250805-debian-12-r8
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
 appVersion: 18.0.20250805
-- condition: postgresql.enabled
-  name: postgresql
-  repository: file://..
-  version: 16.x.x
 description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
   that can connect a wide variety of business operations such as sales, supply chain,
   finance, and project management.
@@ -26,7 +21,9 @@ keywords:
 - http
 - web
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: odoo
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/odoo
-version: 28.2.10
+version: 1.0.0

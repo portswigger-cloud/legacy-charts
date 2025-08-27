@@ -4,9 +4,7 @@
 annotations:
   category: Infrastructure
   images: |
-    - name: gitlab-runner
       image: docker.io/bitnami/gitlab-runner:18.3.0-debian-12-r0
-    - name: gitlab-runner-helper
       image: docker.io/bitnami/gitlab-runner-helper:18.3.0-debian-12-r0
   licenses: Apache-2.0
   tanzuCategory: application
@@ -21,7 +19,9 @@ keywords:
 - ci
 - deploy
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: gitlab-runner
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/gitlab-runner
-version: 1.1.8
+version: 1.0.0

@@ -4,9 +4,7 @@
 annotations:
   category: MachineLearning
   images: |
-    - name: tensorflow-resnet
       image: docker.io/bitnami/tensorflow-resnet:2.19.1-debian-12-r0
-    - name: tensorflow-serving
       image: docker.io/bitnami/tensorflow-serving:2.19.1-debian-12-r0
   licenses: Apache-2.0
   tanzuCategory: application
@@ -24,7 +22,9 @@ keywords:
 - learning
 - library
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: tensorflow-resnet
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet
-version: 4.3.14
+version: 1.0.0

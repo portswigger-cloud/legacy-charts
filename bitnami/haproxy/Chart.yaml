@@ -4,7 +4,6 @@
 annotations:
   category: Infrastructure
   images: |
-    - name: haproxy
       image: docker.io/bitnami/haproxy:3.2.4-debian-12-r0
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
@@ -20,7 +19,9 @@ keywords:
 - proxy
 - infrastructure
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: haproxy
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/haproxy
-version: 2.2.34
+version: 1.0.0

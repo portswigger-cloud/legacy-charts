@@ -4,7 +4,6 @@
 annotations:
   category: DeveloperTools
   images: |
-    - name: external-dns
       image: docker.io/bitnami/external-dns:0.18.0-debian-12-r4
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
@@ -19,7 +18,9 @@ keywords:
 - network
 - dns
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: external-dns
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/external-dns
-version: 9.0.3
+version: 1.0.0

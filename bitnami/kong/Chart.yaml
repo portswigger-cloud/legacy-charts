@@ -4,18 +4,12 @@
 annotations:
   category: Infrastructure
   images: |
-    - name: kong
       image: docker.io/bitnami/kong:3.9.1-debian-12-r7
-    - name: kong-ingress-controller
       image: docker.io/bitnami/kong-ingress-controller:3.5.1-debian-12-r3
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.9.1
-- condition: postgresql.enabled
-  name: postgresql
-  repository: file://..
-  version: 16.x.x
 description: Kong is an open source Microservice API gateway and platform designed
   for managing microservices requests of high-availability, fault-tolerance, and distributed
   systems.
@@ -31,7 +25,9 @@ keywords:
 - www
 - reverse proxy
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: kong
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kong
-version: 15.4.21
+version: 1.0.0

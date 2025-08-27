@@ -4,9 +4,7 @@
 annotations:
   category: CMS
   images: |
-    - name: ghost
       image: docker.io/bitnami/ghost:6.0.5-debian-12-r0
-    - name: os-shell
       image: docker.io/bitnami/os-shell:12-debian-12-r51
   licenses: Apache-2.0
   tanzuCategory: application
@@ -26,7 +24,9 @@ keywords:
 - nodejs
 - javascript
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: ghost
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/ghost
-version: 25.0.4
+version: 1.0.0

@@ -4,11 +4,8 @@
 annotations:
   category: ApplicationServer
   images: |
-    - name: jmx-exporter
       image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
-    - name: os-shell
       image: docker.io/bitnami/os-shell:12-debian-12-r51
-    - name: tomcat
       image: docker.io/bitnami/tomcat:11.0.10-debian-12-r4
   licenses: Apache-2.0
   tanzuCategory: application
@@ -27,7 +24,9 @@ keywords:
 - application server
 - jsp
 maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/bitnami/charts
 name: tomcat
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/tomcat
-version: 12.0.8
+version: 1.0.0
