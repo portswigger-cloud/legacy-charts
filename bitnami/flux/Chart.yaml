@@ -15,6 +15,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.6.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Source Controller is a component of Flux. Flux is a tool for keeping
   Kubernetes clusters in sync with sources of configuration.
 home: https://bitnami.com

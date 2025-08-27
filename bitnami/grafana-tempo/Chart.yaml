@@ -12,6 +12,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.8.2
+dependencies:
+- condition: memcached.enabled
+  name: memcached
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 7.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Grafana Tempo is a distributed tracing system that has out-of-the-box
   integration with Grafana. It is highly scalable and works with many popular tracing
   protocols.

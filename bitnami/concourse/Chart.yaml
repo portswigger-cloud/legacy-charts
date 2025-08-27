@@ -10,6 +10,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 7.13.2
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.X.X
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Concourse is an automation system written in Go. It is most commonly
   used for CI/CD, and is built to scale to any kind of automation pipeline, from simple
   to complex.

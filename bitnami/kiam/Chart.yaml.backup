@@ -4,18 +4,11 @@
 annotations:
   category: Infrastructure
   images: |
-    - name: kiam
       image: docker.io/bitnami/kiam:4.2.0-debian-12-r70
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 4.2.0
-dependencies:
-- name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: kiam is a proxy that captures AWS Metadata API requests. It allows AWS
   IAM roles to be set for Kubernetes workloads.
 home: https://bitnami.com
@@ -30,4 +23,4 @@ maintainers:
 name: kiam
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/kiam
-version: 2.3.16
+version: 4.2.0

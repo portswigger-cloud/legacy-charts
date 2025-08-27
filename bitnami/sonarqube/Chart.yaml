@@ -11,6 +11,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 25.8.0
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: SonarQube(TM) is an open source quality management platform that analyzes
   and measures code's technical quality. It enables developers to detect code issues,
   vulnerabilities, and bugs in early stages.

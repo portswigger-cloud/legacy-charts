@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 8.1.3
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Valkey is an open source (BSD) high-performance key/value datastore that
   supports a variety workloads such as caching, message queues, and can act as a primary
   database.

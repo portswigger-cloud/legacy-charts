@@ -10,6 +10,18 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 6.0.5
+dependencies:
+- condition: mysql.enabled
+  name: mysql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - ghost-database
+  version: 14.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Ghost is an open source publishing platform designed to create blogs,
   magazines, and news sites. It includes a simple markdown editor with preview, theming,
   and SEO built-in to simplify editing.

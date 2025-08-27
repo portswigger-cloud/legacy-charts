@@ -11,6 +11,15 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 8.2.3
+dependencies:
+- name: mongodb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Parse is a platform that enables users to add a scalable and powerful
   backend to launch a full-featured app for iOS, Android, JavaScript, Windows, Unity,
   and more.

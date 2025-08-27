@@ -12,6 +12,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 4.0.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Kafka is a distributed streaming platform designed to build real-time
   pipelines and can be used as a message broker or as a replacement for a log aggregation
   solution for big data applications.

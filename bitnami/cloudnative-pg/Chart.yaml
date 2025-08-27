@@ -12,6 +12,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 1.26.1
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: CloudNativePG is an open-source tool for managing PostgreSQL databases
   on Kubernetes, from setup to ongoing upkeep.
 home: https://bitnami.com

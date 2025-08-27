@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.17.5
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
   model training. Features dense or sparse model inference, high throughput and high
   compression.

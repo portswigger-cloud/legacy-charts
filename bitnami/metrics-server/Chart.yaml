@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.8.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Metrics Server aggregates resource usage data, such as container CPU
   and memory usage, in a Kubernetes cluster and makes it available via the Metrics
   API.

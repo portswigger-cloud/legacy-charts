@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 5.26.10
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Neo4j is a high performance graph store with all the features expected
   of a mature and robust database, like a friendly query language and ACID transactions.
 home: https://bitnami.com

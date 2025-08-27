@@ -9,6 +9,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 18.0.20250805
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
   that can connect a wide variety of business operations such as sales, supply chain,
   finance, and project management.

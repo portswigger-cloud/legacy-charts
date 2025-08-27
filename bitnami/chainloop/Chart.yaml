@@ -12,6 +12,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.43.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- condition: development
+  name: vault
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 1.x.x
 description: Chainloop is an open-source Software Supply Chain control plane, a single
   source of truth for metadata and artifacts, plus a declarative attestation process.
 home: https://bitnami.com

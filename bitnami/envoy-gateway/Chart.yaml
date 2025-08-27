@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 1.5.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Envoy Gateway simplifies traffic management by extending Envoy Proxy's
   features, offering Kubernetes Gateway API integration for secure, scalable, and
   observable application routing

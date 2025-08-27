@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.516.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Jenkins is an open source Continuous Integration and Continuous Delivery
   (CI/CD) server designed to automate the building, testing, and deploying of any
   software project.

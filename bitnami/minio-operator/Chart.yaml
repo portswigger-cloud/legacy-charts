@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 7.1.1
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: MinIO(R) Operator is a Kubernetes-native tool for deploying and managing
   high-performance, S3-compatible MinIO(R) object storage across hybrid cloud infrastructures.
 home: https://bitnami.com

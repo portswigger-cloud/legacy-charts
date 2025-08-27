@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.32.1
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Contour is an open source Kubernetes ingress controller that works by
   deploying the Envoy proxy as a reverse proxy and load balancer.
 home: https://bitnami.com

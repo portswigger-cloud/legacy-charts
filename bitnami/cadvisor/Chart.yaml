@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.53.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: cAdvisor (Container Advisor) is an open-source tool by Google for monitoring
   containers, collecting metrics like CPU, memory, and network usage.
 home: https://bitnami.com

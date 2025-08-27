@@ -11,6 +11,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.7.1
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- condition: mysql.enabled
+  name: mysql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 14.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Argo Workflows is meant to orchestrate Kubernetes jobs in parallel. It
   uses DAG and step-based workflows
 home: https://bitnami.com

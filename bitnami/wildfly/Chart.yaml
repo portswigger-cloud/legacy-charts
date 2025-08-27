@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 37.0.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Wildfly is a lightweight, open source application server, formerly known
   as JBoss, that implements the latest enterprise Java standards.
 home: https://bitnami.com

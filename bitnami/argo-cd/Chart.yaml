@@ -12,6 +12,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.1.1
+dependencies:
+- condition: redis.enabled
+  name: redis
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png

@@ -11,6 +11,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 6.8.2
+dependencies:
+- condition: memcached.enabled
+  name: memcached
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 7.x.x
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: WordPress is the world's most popular blogging and content management
   platform. Powerful yet simple, everyone from students to global corporations use
   it to build beautiful, functional websites.

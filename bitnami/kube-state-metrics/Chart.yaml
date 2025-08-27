@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 2.16.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: kube-state-metrics is a simple service that listens to the Kubernetes
   API server and generates metrics about the state of the objects.
 home: https://bitnami.com

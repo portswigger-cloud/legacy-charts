@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 3.2.4
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL termination
   and offloading, TCP and HTTP normalization, traffic regulation, caching and protection
   against DDoS attacks.

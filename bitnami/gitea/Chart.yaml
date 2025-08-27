@@ -10,6 +10,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.24.5
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Gitea is a lightweight code hosting solution. Written in Go, features
   low resource consumption, easy upgrades and multiple databases.
 home: https://bitnami.com

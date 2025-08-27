@@ -10,6 +10,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 6.0.6
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Redmine is an open source management application. It includes a tracking
   issue system, Gantt charts for a visual view of projects and deadlines, and supports
   SCM integration for version control.

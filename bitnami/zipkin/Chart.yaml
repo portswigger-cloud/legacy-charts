@@ -10,6 +10,16 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.5.1
+dependencies:
+- condition: cassandra.enabled
+  name: cassandra
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 12.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Zipkin is a distributed tracing system that helps collect and analyze
   timing data to troubleshoot latency issues in service architectures, providing visibility
   into service call performance.

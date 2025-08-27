@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.15.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: MetalLB is a load-balancer implementation for bare metal Kubernetes clusters,
   using standard routing protocols.
 home: https://bitnami.com

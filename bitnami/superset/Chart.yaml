@@ -9,6 +9,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 5.0.0
+dependencies:
+- condition: redis.enabled
+  name: redis
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Superset is a modern data exploration and data visualization platform.
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/superset/img/superset-stack-220x234.png

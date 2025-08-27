@@ -11,6 +11,20 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 1.85.0
+dependencies:
+- condition: redis.enabled
+  name: redis
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- condition: mongodb.enabled
+  name: mongodb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Appsmith is an open source platform for building and maintaining internal
   tools, such as custom dashboards, admin panels or CRUD apps.
 home: https://bitnami.com

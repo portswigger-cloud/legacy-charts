@@ -4,30 +4,13 @@
 annotations:
   category: MachineLearning
   images: |
-    - name: git
       image: docker.io/bitnami/git:2.51.0-debian-12-r0
-    - name: mlflow
       image: docker.io/bitnami/mlflow:3.3.1-debian-12-r0
-    - name: os-shell
       image: docker.io/bitnami/os-shell:12-debian-12-r51
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
 appVersion: 3.3.1
-dependencies:
-- condition: minio.enabled
-  name: minio
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.x.x
-- condition: postgresql.enabled
-  name: postgresql
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.x.x
-- name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: MLflow is an open-source platform designed to manage the end-to-end machine
   learning lifecycle. It allows you to track experiments, package code into reproducible
   runs, and share and deploy models.
@@ -45,6 +28,4 @@ maintainers:
 name: mlflow
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mlflow
-- https://github.com/bitnami/containers/tree/main/bitnami/mlflow
-- https://github.com/mlflow/mlflow
-version: 5.1.16
+version: 3.3.1

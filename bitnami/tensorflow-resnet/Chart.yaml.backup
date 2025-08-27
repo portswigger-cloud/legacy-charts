@@ -4,20 +4,12 @@
 annotations:
   category: MachineLearning
   images: |
-    - name: tensorflow-resnet
       image: docker.io/bitnami/tensorflow-resnet:2.19.1-debian-12-r0
-    - name: tensorflow-serving
       image: docker.io/bitnami/tensorflow-serving:2.19.1-debian-12-r0
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.19.1
-dependencies:
-- name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
   and ResNet models.
 home: https://bitnami.com
@@ -35,4 +27,4 @@ maintainers:
 name: tensorflow-resnet
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet
-version: 4.3.14
+version: 2.19.1

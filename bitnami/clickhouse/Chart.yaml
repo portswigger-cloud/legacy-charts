@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 25.7.4
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: ClickHouse is an open-source column-oriented OLAP database management
   system. Use it to boost your database performance while providing linear scalability
   and hardware efficiency.

@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.19.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Fluentd collects events from various data sources and writes them to
   files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
 home: https://bitnami.com

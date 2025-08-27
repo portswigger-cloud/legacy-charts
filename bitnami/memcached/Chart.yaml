@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 1.6.39
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Memcached is an high-performance, distributed memory object caching system,
   generic in nature, but intended for use in speeding up dynamic web applications
   by alleviating database load.

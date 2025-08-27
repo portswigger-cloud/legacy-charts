@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 0.0.23
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Grafana k6 Operator is a Kubernetes operator that enables running distributed
   k6 load tests in a cluster, automating test execution and scaling for performance
   validation.

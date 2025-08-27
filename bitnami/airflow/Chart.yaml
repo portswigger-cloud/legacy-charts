@@ -10,6 +10,20 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 3.0.5
+dependencies:
+- condition: redis.enabled
+  name: redis
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 22.x.x
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Airflow is a tool to express and execute workflows as directed
   acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task progress
   and handle task dependencies.

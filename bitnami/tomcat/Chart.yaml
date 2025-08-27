@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 11.0.10
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Tomcat is an open-source web server designed to host and run Java-based
   web applications. It is a lightweight server with a good performance for applications
   running in production environments.

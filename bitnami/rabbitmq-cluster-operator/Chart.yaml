@@ -12,6 +12,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 2.16.1
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: The RabbitMQ Cluster Kubernetes Operator automates provisioning, management,
   and operations of RabbitMQ clusters running on Kubernetes.
 home: https://bitnami.com

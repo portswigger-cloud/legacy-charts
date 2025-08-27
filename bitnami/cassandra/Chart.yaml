@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 5.0.5
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Cassandra is an open source distributed database management system
   designed to handle large amounts of data across many servers, providing high availability
   with no single point of failure.

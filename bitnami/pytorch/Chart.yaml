@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.8.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: PyTorch is a deep learning platform that accelerates the transition from
   research prototyping to production deployment. Bitnami image includes Torchvision
   for specific computer vision support.

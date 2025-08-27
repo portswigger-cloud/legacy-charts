@@ -11,6 +11,12 @@ annotations:
   licenses: Apache-2.0
 apiVersion: v2
 appVersion: 0.25.3
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: ClickHouse Operator is a production-ready operator that manages ClickHouse
   databases delivering robust features required for cost-efficient, real-time analytic
   applications.

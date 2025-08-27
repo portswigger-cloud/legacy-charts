@@ -12,6 +12,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 3.5.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Prometheus is an open source monitoring and alerting system. It enables
   sysadmins to monitor their infrastructures by collecting metrics from configured
   targets at given intervals.

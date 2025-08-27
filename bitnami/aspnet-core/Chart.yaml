@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 9.0.8
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: ASP.NET Core is an open-source framework for web application development
   created by Microsoft. It runs on both the full .NET Framework, on Windows, and the
   cross-platform .NET Core.

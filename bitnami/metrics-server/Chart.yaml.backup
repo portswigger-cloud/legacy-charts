@@ -4,18 +4,11 @@
 annotations:
   category: Analytics
   images: |
-    - name: metrics-server
       image: docker.io/bitnami/metrics-server:0.8.0-debian-12-r4
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 0.8.0
-dependencies:
-- name: common
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  tags:
-  - bitnami-common
-  version: 2.x.x
 description: Metrics Server aggregates resource usage data, such as container CPU
   and memory usage, in a Kubernetes cluster and makes it available via the Metrics
   API.
@@ -31,6 +24,5 @@ maintainers:
 name: metrics-server
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/metrics-server
-version: 7.4.12
-# Updated for internal supply chain control
+version: 0.8.0
 # Trigger release for chart repository publishing

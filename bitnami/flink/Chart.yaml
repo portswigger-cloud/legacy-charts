@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 2.1.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Flink is a framework and distributed processing engine for stateful
   computations over unbounded and bounded data streams.
 home: https://bitnami.com

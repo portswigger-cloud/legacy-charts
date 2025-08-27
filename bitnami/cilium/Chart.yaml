@@ -14,6 +14,18 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.18.1
+dependencies:
+- condition: etcd.enabled
+  name: etcd
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - cilium-database
+  version: 12.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Cilium is an eBPF-based networking, observability, and security for Linux
   container management platforms like Docker and Kubernetes.
 home: https://bitnami.com

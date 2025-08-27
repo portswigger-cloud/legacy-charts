@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 5.19.4
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Grafana Operator is a Kubernetes operator that enables the installation
   and management of Grafana instances, dashboards and plugins.
 home: https://bitnami.com

@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 4.2.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Multus is a CNI plugin for Kubernetes clusters. Written in Go, features
   adding multiple network interfaces to pods.
 home: https://bitnami.com

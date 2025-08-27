@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 2025.2.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: ScyllaDB is an open-source, distributed NoSQL wide-column data store.
   Written in C++, it is designed for high throughput and low latency, compatible with
   Apache Cassandra.

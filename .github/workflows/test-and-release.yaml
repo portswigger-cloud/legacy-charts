@@ -50,6 +50,17 @@ jobs:
 #      - name: Test
 #        run: helm unittest --strict bitnami/*/
 
+      - name: Package subcharts manually
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          # Package kube-prometheus-crds subchart manually
+          if [ -d "bitnami/kube-prometheus/charts/kube-prometheus-crds" ]; then
+            echo "Packaging kube-prometheus-crds subchart..."
+            mkdir -p .cr-release-packages
+            helm package bitnami/kube-prometheus/charts/kube-prometheus-crds --destination .cr-release-packages
+            echo "✅ kube-prometheus-crds packaged successfully"
+          fi
+
       - name: Run chart-releaser
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: helm/chart-releaser-action@v1.5.0

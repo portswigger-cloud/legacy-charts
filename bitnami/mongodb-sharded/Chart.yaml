@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 8.0.13
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: MongoDB(R) is an open source NoSQL database that uses JSON for data storage.
   MongoDB(TM) Sharded improves scalability and reliability for large datasets by distributing
   data across multiple machines.

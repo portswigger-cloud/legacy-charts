@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 3.9.3
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache ZooKeeper provides a reliable, centralized register of configuration
   data and services for distributed applications.
 home: https://bitnami.com

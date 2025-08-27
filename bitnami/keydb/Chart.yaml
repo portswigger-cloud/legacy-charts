@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 6.3.4
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: KeyDB is a high performance fork of Redis with a focus on multithreading,
   memory efficiency, and high throughput.
 home: https://bitnami.com

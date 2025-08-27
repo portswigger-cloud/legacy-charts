@@ -10,6 +10,18 @@ annotations:
   tanzuCategory: application
 apiVersion: v2
 appVersion: 5.2.2
+dependencies:
+- condition: db.bundleTestDB
+  name: mariadb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - phpmyadmin-database
+  version: 22.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: phpMyAdmin is a free software tool written in PHP, intended to handle
   the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations
   on MySQL and MariaDB.

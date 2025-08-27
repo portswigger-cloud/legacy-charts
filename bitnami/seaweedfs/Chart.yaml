@@ -12,6 +12,24 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 3.96.0
+dependencies:
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - seaweedfs-database
+  version: 22.x.x
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - seaweedfs-database
+  version: 16.x.x
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: SeaweedFS is a simple and highly scalable distributed file system.
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/seaweedfs/img/seaweedfs-stack-220x234.png

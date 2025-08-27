@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 4.0.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Apache Spark is a high-performance engine for large-scale computing tasks,
   such as data processing, machine learning and real-time data streaming. It includes
   APIs for Java, Python, Scala and R.

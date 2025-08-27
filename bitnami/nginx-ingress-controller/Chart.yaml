@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.13.1
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: NGINX Ingress Controller is an Ingress controller that manages external
   access to HTTP services in a Kubernetes cluster using NGINX.
 home: https://bitnami.com

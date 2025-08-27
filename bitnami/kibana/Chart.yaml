@@ -10,6 +10,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 9.1.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Kibana is an open source, browser based analytics and search dashboard
   for Elasticsearch. Kibana strives to be easy to get started with, while also being
   flexible and powerful.

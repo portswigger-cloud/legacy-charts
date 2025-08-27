@@ -11,6 +11,12 @@ annotations:
   tanzuCategory: service
 apiVersion: v2
 appVersion: 3.2.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: OpenSearch is a scalable open-source solution for search, analytics,
   and observability. Features full-text queries, natural language processing, custom
   dictionaries, amongst others.

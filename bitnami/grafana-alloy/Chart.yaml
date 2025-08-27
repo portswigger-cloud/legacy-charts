@@ -9,6 +9,12 @@ annotations:
   licenses: Apache-2.0
 apiVersion: v2
 appVersion: 1.10.2
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Grafana Alloy is an open source OpenTelemetry Collector distribution
   with built-in Prometheus pipelines and support for metrics, logs, traces, and profiles.
 home: https://bitnami.com

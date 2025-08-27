@@ -9,6 +9,12 @@ annotations:
   tanzuCategory: clusterUtility
 apiVersion: v2
 appVersion: 1.7.0
+dependencies:
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: Kubernetes Event Exporter makes it easy to export Kubernetes events to
   other tools, thereby enabling better event observability, custom alerts and aggregation.
 home: https://bitnami.com
