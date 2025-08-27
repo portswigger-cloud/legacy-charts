@@ -46,4 +46,4 @@ maintainers:
 name: seaweedfs
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/seaweedfs
-version: 3.96.1
+version: 6.0.1-legacy

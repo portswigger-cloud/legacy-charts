@@ -33,4 +33,4 @@ maintainers:
 name: neo4j
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/neo4j
-version: 5.26.11
+version: 0.4.13-legacy
