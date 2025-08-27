@@ -23,7 +23,7 @@ dependencies:
 - condition: cassandra.enabled
   name: cassandra
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 5.x.x
+  version: 12.x.x
 description: Kong is an open source Microservice API gateway and platform designed
   for managing microservices requests of high-availability, fault-tolerance, and distributed
   systems.

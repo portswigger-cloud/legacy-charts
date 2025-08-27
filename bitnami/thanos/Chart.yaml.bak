@@ -4,38 +4,36 @@
 annotations:
   category: Analytics
   images: |
-      image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
-      image: docker.io/bitnami/matomo:5.3.2-debian-12-r12
       image: docker.io/bitnami/os-shell:12-debian-12-r50
+      image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
-appVersion: 5.3.2
+appVersion: 0.39.2
 dependencies:
-- condition: mariadb.enabled
-  name: mariadb
+- condition: minio.enabled
+  name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.x.x
+  version: 17.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - bitnami-common
   version: 2.x.x
-description: Matomo, formerly known as Piwik, is a real time web analytics program.
-  It provides detailed reports on website visitors.
+description: Thanos is a highly available metrics system that can be added on top
+  of existing Prometheus deployments, providing a global query view across all Prometheus
+  installations.
 home: https://bitnami.com
-icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/matomo/img/matomo-stack-220x234.png
+icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/thanos/img/thanos-stack-220x234.png
 keywords:
-- matomo
 - analytics
-- http
-- web
-- application
-- php
+- monitoring
+- prometheus
+- thanos
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
   url: https://github.com/bitnami/charts
-name: matomo
+name: thanos
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/matomo
-version: 11.0.2
+- https://github.com/bitnami/charts/tree/main/bitnami/thanos
+version: 17.3.3

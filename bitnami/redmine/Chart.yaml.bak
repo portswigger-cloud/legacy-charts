@@ -2,46 +2,46 @@
 # SPDX-License-Identifier: APACHE-2.0
 
 annotations:
-  category: CMS
+  category: ProjectManagement
   images: |
-      image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
       image: docker.io/bitnami/os-shell:12-debian-12-r50
-      image: docker.io/bitnami/wordpress:6.8.2-debian-12-r4
+      image: docker.io/bitnami/redmine:6.0.6-debian-12-r6
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
-appVersion: 6.8.2
+appVersion: 6.0.6
 dependencies:
-- condition: memcached.enabled
-  name: memcached
+- condition: postgresql.enabled
+  name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
+  version: 17.x.x
 - condition: mariadb.enabled
   name: mariadb
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.x.x
+  version: 22.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
   - bitnami-common
   version: 2.x.x
-description: WordPress is the world's most popular blogging and content management
-  platform. Powerful yet simple, everyone from students to global corporations use
-  it to build beautiful, functional websites.
+description: Redmine is an open source management application. It includes a tracking
+  issue system, Gantt charts for a visual view of projects and deadlines, and supports
+  SCM integration for version control.
 home: https://bitnami.com
-icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redmine/img/redmine-stack-220x234.png
 keywords:
-- application
-- blog
-- cms
+- redmine
+- project management
+- www
 - http
-- php
 - web
-- wordpress
+- application
+- ruby
+- rails
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
   url: https://github.com/bitnami/charts
-name: wordpress
+name: redmine
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/wordpress
-version: 26.0.2
+- https://github.com/bitnami/charts/tree/main/bitnami/redmine
+version: 34.0.2
