@@ -30,5 +30,5 @@ maintainers:
 name: grafana-operator
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/grafana-operator
-version: 4.9.37-legacy
+version: 4.9.38
 # Trigger release for chart repository publishing

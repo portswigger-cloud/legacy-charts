@@ -14,7 +14,7 @@ appVersion: 8.2.3
 dependencies:
 - name: mongodb
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.5.45-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -38,4 +38,4 @@ maintainers:
 name: parse
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/parse
-version: 25.1.16-legacy
+version: 25.1.17

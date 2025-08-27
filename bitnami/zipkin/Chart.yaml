@@ -14,7 +14,7 @@ dependencies:
 - condition: cassandra.enabled
   name: cassandra
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.3.11-legacy
+  version: 12.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -34,4 +34,4 @@ maintainers:
 name: zipkin
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/zipkin
-version: 1.3.12-legacy
+version: 1.3.13

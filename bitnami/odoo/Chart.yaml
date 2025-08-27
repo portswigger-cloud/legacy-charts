@@ -13,7 +13,7 @@ dependencies:
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -36,4 +36,4 @@ maintainers:
 name: odoo
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/odoo
-version: 28.2.11-legacy
+version: 28.2.12

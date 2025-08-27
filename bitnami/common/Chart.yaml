@@ -22,4 +22,4 @@ maintainers:
 name: common
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/common
-version: 2.31.4-legacy
+version: 2.31.5

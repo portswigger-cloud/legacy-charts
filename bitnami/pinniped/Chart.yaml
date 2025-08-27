@@ -29,4 +29,4 @@ maintainers:
 name: pinniped
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/pinniped
-version: 2.4.23-legacy
+version: 2.4.24

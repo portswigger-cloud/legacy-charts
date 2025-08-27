@@ -14,23 +14,23 @@ dependencies:
 - condition: redis.enabled
   name: redis
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 22.0.6-legacy
+  version: 22.x.x
 - condition: postgresql.enabled
   name: postgresql
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 16.7.27-legacy
+  version: 16.x.x
 - condition: elasticsearch.enabled
   name: elasticsearch
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 22.1.6-legacy
+  version: 22.x.x
 - condition: minio.enabled
   name: minio
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 17.0.21-legacy
+  version: 17.x.x
 - condition: apache.enabled
   name: apache
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 11.4.29-legacy
+  version: 11.x.x
 - name: common
   repository: https://portswigger-cloud.github.io/legacy-charts/
   tags:
@@ -49,4 +49,4 @@ maintainers:
 name: mastodon
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
-version: 14.0.1-legacy
+version: 14.0.2

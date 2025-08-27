@@ -19,7 +19,7 @@ dependencies:
 - condition: cassandra.enabled
   name: cassandra
   repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 12.3.11-legacy
+  version: 12.x.x
 description: Jaeger is a distributed tracing system. It is used for monitoring and
   troubleshooting microservices-based distributed systems.
 home: https://bitnami.com
@@ -34,4 +34,4 @@ maintainers:
 name: jaeger
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/jaeger
-version: 6.0.6-legacy
+version: 6.0.7

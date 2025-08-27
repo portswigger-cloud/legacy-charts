@@ -30,4 +30,4 @@ maintainers:
 name: haproxy
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/haproxy
-version: 2.2.34-legacy
+version: 2.2.35
