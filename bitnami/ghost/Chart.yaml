@@ -13,12 +13,6 @@ annotations:
 apiVersion: v2
 appVersion: 6.0.5
 dependencies:
-- condition: mysql.enabled
-  name: mysql
-  repository: file://..
-  tags:
-  - ghost-database
-  version: 14.x.x
 - name: common
   repository: file://..
   tags:
