@@ -4,21 +4,26 @@
 annotations:
   category: Infrastructure
   images: |
-      image: docker.io/bitnami/grafana-loki:3.5.3-debian-12-r2
+      image: docker.io/bitnami/grafana-mimir:2.17.0-debian-12-r0
+      image: docker.io/bitnami/memcached:1.6.39-debian-12-r0
       image: docker.io/bitnami/nginx:1.29.1-debian-12-r0
       image: docker.io/bitnami/os-shell:12-debian-12-r50
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2
-appVersion: 3.5.3
+appVersion: 2.17.0
 dependencies:
-- alias: grafanaalloy
-  condition: grafanaalloy.enabled
-  name: grafana-alloy
+- condition: minio.enabled
+  name: minio
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 17.x.x
+- alias: memcachedmetadata
+  condition: memcachedmetadata.enabled
+  name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
   version: 1.x.x
-- alias: memcachedchunks
-  condition: memcachedchunks.enabled
+- alias: memcachedindex
+  condition: memcachedindex.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
   version: 1.x.x
@@ -27,13 +32,8 @@ dependencies:
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
   version: 1.x.x
-- alias: memcachedindexqueries
-  condition: memcachedindexqueries.enabled
-  name: memcached
-  repository: https://portswigger-cloud.github.io/legacy-charts/
-  version: 1.x.x
-- alias: memcachedindexwrites
-  condition: memcachedindexwrites.enabled
+- alias: memcachedchunks
+  condition: memcachedchunks.enabled
   name: memcached
   repository: https://portswigger-cloud.github.io/legacy-charts/
   version: 1.x.x
@@ -42,11 +42,10 @@ dependencies:
   tags:
   - bitnami-common
   version: 2.x.x
-description: Grafana Loki is a horizontally scalable, highly available, and multi-tenant
-  log aggregation system. It provides real-time long tailing and full persistence
-  to object storage.
+description: Grafana Mimir is an open source, horizontally scalable, highly available,
+  multi-tenant, long-term storage for Prometheus.
 home: https://bitnami.com
-icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-loki/img/grafana-loki-stack-220x234.png
+icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-mimir/img/grafana-mimir-stack-220x234.png
 keywords:
 - grafana
 - tracing
@@ -55,7 +54,7 @@ keywords:
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
   url: https://github.com/bitnami/charts
-name: grafana-loki
+name: grafana-mimir
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/grafana-loki
-version: 6.0.8
+- https://github.com/bitnami/charts/tree/main/bitnami/grafana-mimir
+version: 3.0.20
