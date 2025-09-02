@@ -64,6 +64,7 @@ spec:
       securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.podSecurityContext "context" $) | nindent 8 }}
       {{- end }}
       initContainers:
+        {{- if .Values.prepareBaseDir.enabled }}
         - name: prepare-base-dir
           image: {{ include "sonarqube.image" . }}
           imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
@@ -93,6 +94,7 @@ spec:
           volumeMounts:
             - name: empty-dir
               mountPath: /emptydir
+        {{- end }}
         {{- if .Values.plugins.install }}
         - name: {{ printf "%s-install-plugins-initcontainer" (include "common.names.fullname" .) }}
           image: {{ include "sonarqube.plugins.image" . }}

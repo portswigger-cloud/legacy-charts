@@ -459,6 +459,12 @@ extraVolumeMounts: []
 ##         containerPort: 1234
 ##
 sidecars: []
+## @param prepareBaseDir.enabled Enable/disable the prepare-base-dir init container
+## NOTE: When disabled, ensure your container image has proper directory structure
+## or handle directory preparation in your entrypoint script
+##
+prepareBaseDir:
+  enabled: true
 ## @param initContainers Add additional init containers to the SonarQube(TM) pod(s)
 ## ref: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
 ## e.g:
