@@ -37,5 +37,5 @@ maintainers:
 name: sonarqube
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/sonarqube
-version: 8.1.19
+version: 8.1.20
 # Trigger release for chart repository publishing
