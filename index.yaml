@@ -17392,6 +17392,47 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 25.8.0
+    created: "2025-09-02T09:49:39.954274853Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      version: 17.x.x
+    - name: common
+      repository: https://portswigger-cloud.github.io/legacy-charts/
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SonarQube(TM) is an open source quality management platform that
+      analyzes and measures code's technical quality. It enables developers to detect
+      code issues, vulnerabilities, and bugs in early stages.
+    digest: f6ffddf626716d07cce665fd598c30c740d1f983b38b73c933396c1c836b7364
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sonarqube/img/sonarqube-stack-220x234.png
+    keywords:
+    - sonarqube
+    - code-quality
+    - code-review
+    - static-analysis
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: sonarqube
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/sonarqube
+    urls:
+    - https://github.com/portswigger-cloud/legacy-charts/releases/download/sonarqube-8.1.20/sonarqube-8.1.20.tgz
+    version: 8.1.20
+  - annotations:
+      category: DeveloperTools
+      images: |
+        image: docker.io/bitnami/jmx-exporter:1.4.0-debian-12-r0
+        image: docker.io/bitnami/os-shell:12-debian-12-r51
+        image: docker.io/bitnami/sonarqube:25.8.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 25.8.0
     created: "2025-08-27T15:35:23.983422166Z"
     dependencies:
     - condition: postgresql.enabled
@@ -19724,4 +19765,4 @@ entries:
     urls:
     - https://github.com/portswigger-cloud/legacy-charts/releases/download/zookeeper-3.9.3/zookeeper-3.9.3.tgz
     version: 3.9.3
-generated: "2025-08-27T15:35:26.213353674Z"
+generated: "2025-09-02T09:49:39.954967078Z"
