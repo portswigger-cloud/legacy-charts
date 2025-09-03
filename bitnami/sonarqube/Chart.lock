@@ -1,0 +1,9 @@
+dependencies:
+- name: postgresql
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 17.6.1
+- name: common
+  repository: https://portswigger-cloud.github.io/legacy-charts/
+  version: 2.31.5
+digest: sha256:eb7467b2a7afc1a4219eb03cc64019380e209eacbdc6c20f9d60c3f190793ba3
+generated: "2025-09-02T10:51:13.941695+01:00"

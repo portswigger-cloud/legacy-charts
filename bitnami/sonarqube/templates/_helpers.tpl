@@ -183,7 +183,7 @@ Sysctl set a property if less than a given value
 {{- define "sonarqube.sysctl.ifLess" -}}
 CURRENT="$(sysctl -n {{ .key }})"
 DESIRED="{{ .value }}"
-if [[ "$DESIRED" -gt "$CURRENT" ]]; then
+if [ "$DESIRED" -gt "$CURRENT" ]; then
     sysctl -w {{ .key }}={{ .value }}
 fi
 {{- end -}}

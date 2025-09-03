@@ -150,7 +150,7 @@ spec:
           image: {{ include "sonarqube.sysctl.image" . }}
           imagePullPolicy: {{ .Values.sysctl.image.pullPolicy | quote }}
           command:
-            - /bin/bash
+            - /bin/sh
             - -ec
             - |
               {{- include "sonarqube.sysctl.ifLess" (dict "key" "vm.max_map_count" "value" "262144") | nindent 14 }}
